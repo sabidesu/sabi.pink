@@ -11,7 +11,7 @@ module.exports = {
     title: `sabi's stuff`,
     description: `a place for sabi to put it's things and thoughts`,
     twitterUsername: `@sabidesu1`,
-    image: `/fullbody_ivory.webp`,
+    image: `/seo.webp`,
     siteUrl: `https://sabi.pink`,
   },
   plugins: [
