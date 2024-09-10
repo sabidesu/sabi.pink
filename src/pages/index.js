@@ -7,24 +7,6 @@ import { protoBg } from '../styles/proto_bg.module.css'
 
 const profileClasses = "rounded-circle img-fluid w-75"
 
-const profileImages = [
-  <StaticImage
-    alt="a red cat-ferret combination with pink hair and yellow horns turned three-quarters and wearing a blue hoodie, looking at the viewer with red eyes"
-    src="../images/fanart_colored_by_rose.png"
-    className={profileClasses}
-    />,
-  <StaticImage
-    alt="a red cat-ferret combination with pink hair and yellow horns looking down at something"
-    src="../images/fullbody_ivory.png"
-    className={profileClasses}
-    />,
-  <StaticImage
-    alt="a red cat-ferret combination with pink hair and yellow horns wearing a blue hoodie with oreos on the design"
-    src="../images/gift_from_kokorodove.png"
-    className={profileClasses}
-    />
-]
-
 const socialMedia = [
   {
     href: "https://twitter.com/sabidesu1",
@@ -51,11 +33,15 @@ const IndexPage = () => {
         <div className="card-body">
           <div className="row align-items-center gy-4">
             <div className="col-md-4 d-flex justify-content-end">
-              {profileImages[Math.floor(Math.random() * profileImages.length)]}
+              <StaticImage
+                  alt="a red fluff dragon with pink hair and yellow horns wearing a blue hoodie looking at the viewer"
+                  src="../images/pfp_ref_ratasstouille.png"
+                  className={profileClasses}
+              />
             </div>
             <div className="col-md me-0 me-md-5">
               <h4 className="text-info-emphasis display-4">hi, i'm sabi!</h4>
-              <p className="mb-1">i'm just a demon kerret (cat/ferret) that likes to program things. you can find me at the places below</p>
+              <p className="mb-1">i'm just a fluff dragon that likes to program things. you can find me at the places below</p>
               <Socials links={socialMedia} />
             </div>
           </div>
