@@ -30,15 +30,15 @@ const IndexPage = () => {
     <Layout pageTitle="">
       <div className="card">
         <div className="card-body">
-          <div className="row align-items-center gy-4">
-            <div className="col-md-4 d-flex justify-content-end">
+          <div className="md:grid grid-cols-3 gap-x-6 items-center">
+            <div className="md:col-span-1 flex justify-end">
               <StaticImage
                   alt="a red fluff dragon with pink hair and yellow horns wearing a blue hoodie looking at the viewer"
                   src="../images/pfp_ref_ratasstouille.png"
                   className={profileClasses}
               />
             </div>
-            <div className="relative md:flex-grow md:flex-1 me-0 md:me-12">
+            <div className="md:col-span-2 md:mr-12">
               <h4 className="text-cyan-300 text-4xl font-thin">hi, i'm sabi!</h4>
               <p className="mb-1">i'm just a fluff dragon that likes to program things. you can find me at the places below</p>
               <Socials links={socialMedia} />
