@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import { protoBg } from '../styles/proto_bg.module.css'
 
-const profileClasses = "max-w-full h-full w-3/4 border-2 border-cyan-300"
+const profileClasses = "max-w-full h-full w-3/4 border-2 border-cyan-700"
 
 const socialMedia = [
   {
@@ -28,21 +28,19 @@ const socialMedia = [
 const IndexPage = () => {
   return (
     <Layout pageTitle="">
-      <div className="card">
-        <div className="card-body">
-          <div className="md:grid grid-cols-3 gap-x-6 items-center">
-            <div className="md:col-span-1 flex justify-end">
-              <StaticImage
-                  alt="a red fluff dragon with pink hair and yellow horns wearing a blue hoodie looking at the viewer"
-                  src="../images/pfp_ref_ratasstouille.png"
-                  className={profileClasses}
-              />
-            </div>
-            <div className="md:col-span-2 md:mr-12">
-              <h4 className="text-cyan-300 text-4xl font-thin">hi, i'm sabi!</h4>
-              <p className="mb-1">i'm just a fluff dragon that likes to program things. you can find me at the places below</p>
-              <Socials links={socialMedia} />
-            </div>
+      <div className="flex p-3 bg-white/80 border-4 border-cyan-700">
+        <div className="md:grid grid-cols-3 gap-x-6 items-center">
+          <div className="md:col-span-1 flex justify-end mb-2">
+            <StaticImage
+                alt="a red fluff dragon with pink hair and yellow horns wearing a blue hoodie looking at the viewer"
+                src="../images/pfp_ref_ratasstouille.png"
+                className={profileClasses}
+            />
+          </div>
+          <div className="md:col-span-2 md:mr-12">
+            <h4 className="text-cyan-700 text-4xl font-thin mb-2">hi, i'm sabi!</h4>
+            <p className="mb-1">i'm just a fluff dragon that likes to program things. you can find me at the places below</p>
+            <Socials links={socialMedia} />
           </div>
         </div>
       </div>
@@ -53,7 +51,7 @@ const IndexPage = () => {
 const SocialLink = ({ href, name, last }) => {
   return (
     <>
-      <li className="me-2 my-auto"><a href={href} className="no-underline text-rose-400">{name}</a></li>
+      <li className="me-2 my-auto"><a href={href} className="no-underline text-rose-700">{name}</a></li>
       {!last && <li className="my-auto me-2">・</li>}
     </>
   )
@@ -61,7 +59,7 @@ const SocialLink = ({ href, name, last }) => {
 
 const SocialButton = ({ href, name, last }) => {
   return (
-    <a href={href} className={`w-full outline outline-1 outline-rose-400 text-center text-rose-400 hover:text-neutral-50 no-underline hover:bg-rose-400 py-1 ${!last && "mb-2"}`}>{name}</a>
+    <a href={href} className={`w-full border-1 border-rose-700 text-center text-rose-700 hover:text-neutral-50 no-underline hover:bg-rose-700 py-1 ${!last && "mb-2"}`}>{name}</a>
   )
 }
 
