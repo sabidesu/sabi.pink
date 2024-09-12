@@ -54,7 +54,7 @@ const IndexPage = () => {
 const SocialLink = ({ href, name, last }) => {
   return (
     <>
-      <li className="me-2 my-auto"><a href={href} className="no-underline text-rose-300">{name}</a></li>
+      <li className="me-2 my-auto"><a href={href} className="no-underline text-rose-400">{name}</a></li>
       {!last && <li className="my-auto me-2">・</li>}
     </>
   )
@@ -69,7 +69,7 @@ const SocialButton = ({ href, name, last }) => {
 const Socials = ({ links }) => {
   return (
     <>
-      <ul className="navbar-nav flex-row d-none d-sm-flex">
+      <ul id="social links" className="hidden sm:flex flex-row ps-0 mb-0">
         {
           links.map(({ href, name }, index) => {
             if (index === links.length - 1) 
@@ -78,7 +78,7 @@ const Socials = ({ links }) => {
           })
         }
       </ul>
-      <div className="d-sm-none mt-3" id={customButtons}>
+      <div className="sm:hidden mt-3" id={customButtons}>
         {
           links.map(({ href, name }, index) => {
             if (index === links.length - 1)
