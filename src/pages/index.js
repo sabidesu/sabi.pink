@@ -2,7 +2,6 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
-import { customButtons, btnOutlineDangerEmphasis } from '../styles/button_styles.module.css'
 import { protoBg } from '../styles/proto_bg.module.css'
 
 const profileClasses = "rounded-circle img-fluid w-75"
@@ -78,7 +77,7 @@ const Socials = ({ links }) => {
           })
         }
       </ul>
-      <div className="sm:hidden mt-3 flex flex-column" id={customButtons}>
+      <div className="sm:hidden mt-3 flex flex-column">
         {
           links.map(({ href, name }, index) => {
             if (index === links.length - 1)
