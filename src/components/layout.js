@@ -13,7 +13,7 @@ const Layout = ({ pageTitle, children, blogPost }) => {
   `)
 
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="d-flex flex-column min-vh-100 text-neutral-50">
       <nav className="navbar navbar-expand-sm text-bg-dark fixed-top">
         <div className="container-fluid">
           <h6 className="navbar-brand mb-1">{data.site.siteMetadata.title}</h6>
