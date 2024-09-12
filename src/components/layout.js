@@ -13,7 +13,7 @@ const Layout = ({ pageTitle, children, blogPost }) => {
   `)
 
   return (
-    <div className="d-flex flex-column min-vh-100 text-slate-800">
+    <div className="d-flex flex-column min-vh-100 text-netural-50">
       <nav className="navbar navbar-expand-sm text-bg-dark fixed-top">
         <div className="container-fluid">
           <h6 className="navbar-brand mb-1">{data.site.siteMetadata.title}</h6>
@@ -40,7 +40,7 @@ const Layout = ({ pageTitle, children, blogPost }) => {
       </nav>
       <main className="container w-75 px-0 d-flex flex-grow-1 flex-column justify-content-center" style={{paddingTop: "4.25rem", paddingBottom: "1.5rem"}}>
         {blogPost && <Link to="/blog" className="text-light text-decoration-none">&larr; back to posts</Link>}
-        <h1 className="text-info-emphasis display-1 pb-2">{pageTitle}</h1>
+        <h1 className="text-cyan-700 text-5xl font-thin pb-2">{pageTitle}</h1>
         {children}
       </main>
     </div>
