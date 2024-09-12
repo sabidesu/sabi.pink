@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import { protoBg } from '../styles/proto_bg.module.css'
 
-const profileClasses = "rounded-circle img-fluid w-75"
+const profileClasses = "max-w-full h-full w-3/4 border-2 border-cyan-300"
 
 const socialMedia = [
   {
