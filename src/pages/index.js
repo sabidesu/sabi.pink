@@ -39,8 +39,8 @@ const IndexPage = () => {
                   className={profileClasses}
               />
             </div>
-            <div className="col-md me-0 me-md-5">
-              <h4 className="text-info-emphasis display-4">hi, i'm sabi!</h4>
+            <div className="relative md:flex-grow md:flex-1 me-0 md:me-12">
+              <h4 className="text-cyan-300 text-4xl font-thin">hi, i'm sabi!</h4>
               <p className="mb-1">i'm just a fluff dragon that likes to program things. you can find me at the places below</p>
               <Socials links={socialMedia} />
             </div>
@@ -54,8 +54,8 @@ const IndexPage = () => {
 const SocialLink = ({ href, name, last }) => {
   return (
     <>
-      <li className="nav-item me-2 text-danger-emphasis"><a href={href} className="nav-link">{name}</a></li>
-      {!last && <li className="nav-item nav-link me-2">・</li>}
+      <li className="me-2 my-auto"><a href={href} className="no-underline text-rose-300">{name}</a></li>
+      {!last && <li className="my-auto me-2">・</li>}
     </>
   )
 }
@@ -72,7 +72,8 @@ const Socials = ({ links }) => {
       <ul className="navbar-nav flex-row d-none d-sm-flex">
         {
           links.map(({ href, name }, index) => {
-            if (index === links.length - 1) return <SocialLink href={href} name={name} key={name} last />
+            if (index === links.length - 1) 
+              return <SocialLink href={href} name={name} key={name} last />
             return <SocialLink href={href} name={name} key={name} />
           })
         }
@@ -80,7 +81,8 @@ const Socials = ({ links }) => {
       <div className="d-sm-none mt-3" id={customButtons}>
         {
           links.map(({ href, name }, index) => {
-            if (index === links.length - 1) return <SocialButton href={href} name={name} key={name} last />
+            if (index === links.length - 1)
+              return <SocialButton href={href} name={name} key={name} last />
             return <SocialButton href={href} name={name} key={name} />
           })
         }
