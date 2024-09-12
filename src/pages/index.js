@@ -59,7 +59,7 @@ const SocialLink = ({ href, name, last }) => {
 
 const SocialButton = ({ href, name, last }) => {
   return (
-    <a href={href} className={`w-full border-1 border-rose-700 text-center text-rose-700 hover:text-neutral-50 no-underline hover:bg-rose-700 py-1 ${!last && "mb-2"}`}>{name}</a>
+    <a href={href} className={`w-full border-2 border-rose-700 text-center text-rose-700 hover:text-neutral-50 no-underline hover:bg-rose-700 py-1 ${!last && "mb-2"}`}>{name}</a>
   )
 }
 
@@ -75,7 +75,7 @@ const Socials = ({ links }) => {
           })
         }
       </ul>
-      <div className="sm:hidden mt-3 flex flex-column">
+      <div className="sm:hidden mt-3 flex flex-col">
         {
           links.map(({ href, name }, index) => {
             if (index === links.length - 1)
