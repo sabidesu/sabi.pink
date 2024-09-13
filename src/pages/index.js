@@ -4,8 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import { protoBg } from '../styles/proto_bg.module.css'
 
-const profileClasses = "max-w-full h-full w-3/4 border-2 border-cyan-700"
-
 const socialMedia = [
   {
     href: "https://twitter.com/sabidesu1",
@@ -30,11 +28,11 @@ const IndexPage = () => {
     <Layout pageTitle="">
       <div className="flex p-3 bg-white/80 border-4 border-cyan-700 text-slate-800">
         <div className="md:grid grid-cols-3 gap-x-6 items-center">
-          <div className="md:col-span-1 flex justify-end mb-2">
+          <div className="md:col-span-1 flex justify-end ms-24 mb-2 sm:mb-0">
             <StaticImage
                 alt="a red fluff dragon with pink hair and yellow horns wearing a blue hoodie looking at the viewer"
                 src="../images/pfp_ref_ratasstouille.png"
-                className={profileClasses}
+                className="max-w-full w-auto h-auto w-3/4 border-2 border-cyan-700"
             />
           </div>
           <div className="md:col-span-2 md:mr-12">
@@ -69,7 +67,7 @@ const Socials = ({ links }) => {
       <ul id="social links" className="hidden sm:flex flex-row ps-0 mb-0">
         {
           links.map(({ href, name }, index) => {
-            if (index === links.length - 1) 
+            if (index === links.length - 1)
               return <SocialLink href={href} name={name} key={name} last />
             return <SocialLink href={href} name={name} key={name} />
           })
