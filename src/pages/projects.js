@@ -53,8 +53,8 @@ const ProjectCard = ({ project }) => {
               <p>{project.description.description}</p>
             </div>
             <div className="flex justify-end">
-              { project.viewLink && <a href={project.viewLink} className={"border border-slate-100 text-neutral-50 hover:bg-slate-100 hover:text-slate-800 p-2"} target="_blank" rel="noopener noreferrer">view</a> }
-              { project.sourceLink && <a href={project.sourceLink} className={"border border-rose-700 text-rose-700 hover:bg-rose-700 hover:text-neutral-50 ms-2 p-2"} target="_blank" rel="noopener noreferrer">{project.sourceLinkText}</a> }
+              { project.viewLink && <a href={project.viewLink} className={"border border-slate-100 text-neutral-50 hover:bg-slate-100 hover:text-slate-800 transition p-2"} target="_blank" rel="noopener noreferrer">view</a> }
+              { project.sourceLink && <a href={project.sourceLink} className={"border border-rose-700 text-rose-700 hover:bg-rose-700 hover:text-neutral-50 transition ms-2 p-2"} target="_blank" rel="noopener noreferrer">{project.sourceLinkText}</a> }
             </div>
           </div>
         </div>

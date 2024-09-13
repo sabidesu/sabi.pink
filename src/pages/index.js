@@ -57,7 +57,7 @@ const SocialLink = ({ href, name, last }) => {
 
 const SocialButton = ({ href, name, last }) => {
   return (
-    <a href={href} className={`w-full border-2 border-rose-700 text-center text-rose-700 hover:text-neutral-50 no-underline hover:bg-rose-700 py-1 ${!last && "mb-2"}`}>{name}</a>
+    <a href={href} className={`w-full border-2 border-rose-700 text-center text-rose-700 hover:text-neutral-50 no-underline hover:bg-rose-700 transition py-1 ${!last && "mb-2"}`}>{name}</a>
   )
 }
 
