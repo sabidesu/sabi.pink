@@ -28,10 +28,10 @@ const ProjectsPage = ({ data }) => {
   return (
     <Layout pageTitle="projects">
       <h3 className="text-3xl mb-4">here are some projects i've worked on! (or are <em>working</em> on! ;)</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="columns-1 sm:columns-2 gap-4">
         {
           data.allContentfulProject.nodes.map((project) => (
-            <div className="col-span-1">
+            <div className="">
               <ProjectCard project={project} key={project.name} />
             </div>
           ))
@@ -43,8 +43,8 @@ const ProjectsPage = ({ data }) => {
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="h-full border-2 border-cyan-700">
-      <div className="sm:grid grid-cols-4 gap-0 h-full">
+    <div className="border-2 border-cyan-700 mb-4">
+      <div className="sm:grid grid-cols-4 gap-0">
         <div className="sm:col-span-1">
           <GatsbyImage image={project.previewImage.gatsbyImage} alt={project.previewImage.description} className="max-w-full h-full" />
         </div>
