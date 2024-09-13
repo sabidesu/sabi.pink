@@ -43,7 +43,7 @@ const ProjectsPage = ({ data }) => {
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="h-full bg-white/80 border-4 border-cyan-700">
+    <div className="h-full border-2 border-cyan-700">
       <div className="sm:grid grid-cols-4 gap-0 h-full">
         <div className="sm:col-span-1">
           <GatsbyImage image={project.previewImage.gatsbyImage} alt={project.previewImage.description} className="max-w-full h-full" />
@@ -55,8 +55,8 @@ const ProjectCard = ({ project }) => {
               <p>{project.description.description}</p>
             </div>
             <div className="flex justify-end">
-              { project.viewLink && <a href={project.viewLink} className={"border-2 border-slate-100 text-neutral-50 hover:bg-slate-100 hover:text-slate-800 p-2"} target="_blank" rel="noopener noreferrer">view</a> }
-              { project.sourceLink && <a href={project.sourceLink} className={"border-2 border-rose-700 text-rose-700 hover:bg-rose-700 hover:text-neutral-50 ms-2 p-2"} target="_blank" rel="noopener noreferrer">{project.sourceLinkText}</a> }
+              { project.viewLink && <a href={project.viewLink} className={"border border-slate-100 text-neutral-50 hover:bg-slate-100 hover:text-slate-800 p-2"} target="_blank" rel="noopener noreferrer">view</a> }
+              { project.sourceLink && <a href={project.sourceLink} className={"border border-rose-700 text-rose-700 hover:bg-rose-700 hover:text-neutral-50 ms-2 p-2"} target="_blank" rel="noopener noreferrer">{project.sourceLinkText}</a> }
             </div>
           </div>
         </div>
