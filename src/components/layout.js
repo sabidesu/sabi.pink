@@ -1,8 +1,12 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useLocation } from '@reach/router'
 
 const NavLink = ({link, text}) => {
-  return <li><Link to={link} className="hover:text-cyan-500 transition">{text}</Link></li>
+  const location = useLocation()
+  const isCurrentPage = link === '/' ? location.pathname === '/' : location.pathname.includes(link)
+
+  return <li><Link to={link} className={`${isCurrentPage ? 'text-rose-700 border-rose-700 hover:border-cyan-500' : 'border-rose-700/0'} border-s-2  hover:text-cyan-500 transition ps-1`}>{text}</Link></li>
 }
 
 const Navbar = ({siteTitle}) => {
@@ -49,7 +53,7 @@ const Navbar = ({siteTitle}) => {
         </button>
       </div>
       <div className={`items-center justify-between w-full grow md:flex md:w-auto md:order-1 ${showMenu ? 'block' : 'hidden'}`} id="navbar-sticky">
-        <ul className="flex flex-col p-2 md:p-0 font-medium space-y-2 sm:space-y-0 md:space-x-4 md:flex-row md:mt-0">
+        <ul className="flex flex-col py-2 md:p-0 font-medium space-y-2 sm:space-y-0 md:space-x-4 md:flex-row md:mt-0">
           {links.map(({link, text}) => <NavLink link={link} text={text} />)}
         </ul>
       </div>
