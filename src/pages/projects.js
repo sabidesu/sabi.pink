@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import { customButtons, btnOutlineDangerEmphasis } from '../styles/button_styles.module.css'
 
 export const query = graphql`
   query {
@@ -28,14 +27,12 @@ export const query = graphql`
 const ProjectsPage = ({ data }) => {
   return (
     <Layout pageTitle="projects">
-      <h3 className="mb-3">here are some projects i've worked on! (or are <em>working</em> on! ;)</h3>
-      <div className="row gx-3 gy-3">
+      <h3 className="text-3xl mb-4">here are some projects i've worked on! (or are <em>working</em> on! ;)</h3>
+      <div className="columns-1 md:columns-2 gap-4">
         {
-          data.allContentfulProject.nodes.map((project) => (
-            <div className="col-lg-6">
-              <ProjectCard project={project} key={project.name} />
-            </div>
-          ))
+          data.allContentfulProject.nodes.map((project) =>
+            <ProjectCard project={project} key={project.name} />
+          )
         }
       </div>
     </Layout>
@@ -44,22 +41,20 @@ const ProjectsPage = ({ data }) => {
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="card h-100">
-      <div className="row g-0 h-100">
-        {project.previewImage && (
-          <div className="col-sm-3">
-            <GatsbyImage image={project.previewImage.gatsbyImage} alt={project.previewImage.description} className="img-fluid rounded h-100" />
-          </div>
-        )}
-        <div className="col-sm">
-          <div className="card-body h-100 d-flex flex-column justify-content-between">
-            <div className="mb-3">
-              <h5 className="card-title">{project.name}</h5>
-              <p className="card-text">{project.description.description}</p>
+    <div className="mb-4 border-2 border-cyan-700 inline-block">
+      <div className="sm:grid grid-cols-4 gap-0">
+        <div className="sm:col-span-1">
+          <GatsbyImage image={project.previewImage.gatsbyImage} alt={project.previewImage.description} className="max-w-full h-full" />
+        </div>
+        <div className="sm:col-span-3">
+          <div className="h-full flex flex-col justify-between p-4">
+            <div className="mb-4">
+              <h5 className="text-xl">{project.name}</h5>
+              <p>{project.description.description}</p>
             </div>
-            <div className="d-flex justify-content-end" id={customButtons}>
-              { project.viewLink && <a href={project.viewLink} className={'btn btn-outline-light rounded-pill'} target="_blank" rel="noopener noreferrer">view</a>}
-              { project.sourceLink && <a href={project.sourceLink} className={`btn ${btnOutlineDangerEmphasis} rounded-pill ms-2`} target="_blank" rel="noopener noreferrer">{project.sourceLinkText}</a>}
+            <div className="flex justify-end">
+              { project.viewLink && <a href={project.viewLink} className={"border border-slate-100 text-slate-800 hover:bg-slate-100 transition p-2"} target="_blank" rel="noopener noreferrer">view</a> }
+              { project.sourceLink && <a href={project.sourceLink} className={"border border-rose-700 text-rose-700 hover:bg-rose-700 hover:text-neutral-50 transition ms-2 p-2"} target="_blank" rel="noopener noreferrer">{project.sourceLinkText}</a> }
             </div>
           </div>
         </div>

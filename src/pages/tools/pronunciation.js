@@ -6,7 +6,7 @@ import { customButtons, btnOutlineDangerEmphasis } from '../../styles/button_sty
 const PronunciationPage = () => {
   return (
     <Layout pageTitle="how do you pronounce 'sabi'?">
-      <h3 className="h3">it's pronounced:</h3>
+      <h3 className="text-3xl mb-3">it's pronounced:</h3>
       <PronunciationGenerator />
     </Layout>
   )
@@ -44,8 +44,8 @@ const PronunciationGenerator = () => {
 
   return (
     <div id={customButtons} className="text-wrap text-break">
-      <p className="lead">{pronunciation}</p>
-      <button className={`btn ${btnOutlineDangerEmphasis} rounded-pill`} onClick={generatePronunciation}>like this 🔊</button>
+      <p className="break-words mb-3">{pronunciation}</p>
+      <button className={'border border-rose-700 text-center text-rose-700 hover:text-neutral-50 no-underline hover:bg-rose-700 transition p-2'} onClick={generatePronunciation}>like this 🔊</button>
     </div>
   )
 }

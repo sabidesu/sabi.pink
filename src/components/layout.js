@@ -1,5 +1,61 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { useLocation } from '@reach/router'
+
+const NavLink = ({link, text}) => {
+  const location = useLocation()
+  const isCurrentPage = link === '/' ? location.pathname === '/' : location.pathname.includes(link)
+
+  return <li><Link to={link} className={`${isCurrentPage ? 'text-rose-700 border-rose-700 hover:border-rose-400 hover:text-rose-400' : 'border-rose-700/0 hover:text-cyan-500'} border-s-2 transition ps-1`}>{text}</Link></li>
+}
+
+const Navbar = ({siteTitle}) => {
+  const [showMenu, setShowMenu] = React.useState(false)
+
+  const toggleMenu = () => setShowMenu(!showMenu)
+
+  const links = [
+    {
+      link: '/',
+      text: 'about me',
+    },
+    {
+      link: '/blog',
+      text: 'blog',
+    },
+    {
+      link: '/projects',
+      text: 'projects',
+    },
+    {
+      link: '/protogens',
+      text: 'protogens!',
+    },
+    {
+      link: '/tools/pronunciation',
+      text: 'pronunciation',
+    }
+  ]
+
+  return (
+    <nav className="flex flex-wrap items-center justify-between sticky z-20 top-2 start-0 text-slate-800 bg-white/80 backdrop-blur-sm border-4 border-cyan-700 mx-2 sm:mx-8 sm:mt-8 px-4 py-2 sm:p-4">
+      <h6 className="text-xl sm:text-2xl text-cyan-700 font-semibold me-8">{siteTitle}</h6>
+      <div className="flex md:order-2 space-x-3 md:space-x-0">
+        <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-rose-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-rose-700" aria-controls="navbar-sticky" aria-expanded="false" onClick={toggleMenu}>
+          <span className="sr-only">Open main menu</span>
+          <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+      </div>
+      <div className={`items-center justify-between w-full grow md:flex md:w-auto md:order-1 ${showMenu ? 'block' : 'hidden'}`} id="navbar-sticky">
+        <ul className="flex flex-col py-2 md:p-0 font-medium space-y-2 md:space-y-0 md:space-x-4 md:flex-row md:mt-0">
+          {links.map(({link, text}) => <NavLink link={link} text={text} />)}
+        </ul>
+      </div>
+    </nav>
+  )
+}
 
 const Layout = ({ pageTitle, children, blogPost }) => {
   const data = useStaticQuery(graphql`
@@ -13,37 +69,16 @@ const Layout = ({ pageTitle, children, blogPost }) => {
   `)
 
   return (
-    <div className="d-flex flex-column min-vh-100">
-      <nav className="navbar navbar-expand-sm text-bg-dark fixed-top">
-        <div className="container-fluid">
-          <h6 className="navbar-brand mb-1">{data.site.siteMetadata.title}</h6>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-0">
-              <li className="nav-item"><Link to="/" className="nav-link">home</Link></li>
-              <li className="nav-item"><Link to="/about" className="nav-link">about</Link></li>
-              <li className="nav-item"><Link to="/blog" className="nav-link">blog</Link></li>
-              <li className="nav-item"><Link to="/projects" className="nav-link">projects</Link></li>
-              <li className="nav-item"><Link to="/protogens" className="nav-link">protogens!</Link></li>
-              <li className="nav-item"><Link to="/itg" className="nav-link">itg</Link></li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">tools</a>
-                <ul className="dropdown-menu">
-                  <li><Link to="/tools/pronunciation" className="dropdown-item">pronunciation</Link></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+    <>
+      <Navbar siteTitle={data.site.siteMetadata.title} /> 
+      <main className="sm:w-5/6 mx-auto px-2 sm:px-0 pb-2 mt-4">
+        <div className="bg-white/80 backdrop-blur-sm border-4 border-cyan-700 text-slate-800 p-4">
+          {blogPost && <Link to="/blog" className="hover:text-cyan-500 transition">&larr; back to posts</Link>}
+          {pageTitle && <h1 className="text-cyan-700 text-5xl font-semibold mb-2">{pageTitle}</h1>}
+          {children}
         </div>
-      </nav>
-      <main className="container w-75 px-0 d-flex flex-grow-1 flex-column justify-content-center" style={{paddingTop: "4.25rem", paddingBottom: "1.5rem"}}>
-        {blogPost && <Link to="/blog" className="text-light text-decoration-none">&larr; back to posts</Link>}
-        <h1 className="text-info-emphasis display-1 pb-2">{pageTitle}</h1>
-        {children}
       </main>
-    </div>
+    </>
   )
 }
 
