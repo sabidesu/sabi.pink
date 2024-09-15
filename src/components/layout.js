@@ -1,11 +1,41 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
+const NavLink = ({link, text}) => {
+  return <li><Link to={link} className="hover:text-cyan-500 transition">{text}</Link></li>
+}
+
 const Navbar = ({siteTitle}) => {
   const [showMenu, setShowMenu] = React.useState(false)
 
-  const navLinkStyles = "hover:text-cyan-500 transition"
   const toggleMenu = () => setShowMenu(!showMenu)
+
+  const links = [
+    {
+      link: '/',
+      text: 'home',
+    },
+    {
+      link: '/about',
+      text: 'about',
+    },
+    {
+      link: '/blog',
+      text: 'blog',
+    },
+    {
+      link: '/projects',
+      text: 'projects',
+    },
+    {
+      link: '/protogens',
+      text: 'protogens!',
+    },
+    {
+      link: '/tools/pronunciation',
+      text: 'pronunciation',
+    }
+  ]
 
   return (
     <nav className="flex flex-wrap items-center justify-between sticky z-20 top-2 start-0 text-slate-800 bg-white/80 backdrop-blur-sm border-4 border-cyan-700  mx-2 sm:mx-8 sm:mt-8 p-2 sm:p-4">
@@ -20,13 +50,7 @@ const Navbar = ({siteTitle}) => {
       </div>
       <div className={`items-center justify-between w-full grow md:flex md:w-auto md:order-1 ${showMenu ? 'block' : 'hidden'}`} id="navbar-sticky">
         <ul className="flex flex-col p-2 md:p-0 font-medium space-y-2 sm:space-y-0 md:space-x-4 md:flex-row md:mt-0">
-          <li><Link to="/" className={navLinkStyles}>home</Link></li>
-          <li><Link to="/about" className={navLinkStyles}>about</Link></li>
-          <li><Link to="/blog" className={navLinkStyles}>blog</Link></li>
-          <li><Link to="/projects" className={navLinkStyles}>projects</Link></li>
-          <li><Link to="/protogens" className={navLinkStyles}>protogens!</Link></li>
-          {/* <li><Link to="/itg" className={navLinkStyles}>itg</Link></li> */}
-          <li><Link to="/tools/pronunciation" className={navLinkStyles}>pronunciation</Link></li>
+          {links.map(({link, text}) => <NavLink link={link} text={text} />)}
         </ul>
       </div>
     </nav>
