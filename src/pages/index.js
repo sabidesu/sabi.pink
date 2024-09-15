@@ -26,7 +26,7 @@ const socialMedia = [
 const IndexPage = () => {
   return (
     <Layout pageTitle="">
-      <div className="flex p-3 bg-white/80 border-4 border-cyan-700 text-slate-800">
+      <div className="flex">
         <div className="md:grid grid-cols-3 gap-x-6 items-center">
           <div className="md:col-span-1 flex justify-end ms-24 mb-2 sm:mb-0">
             <StaticImage
