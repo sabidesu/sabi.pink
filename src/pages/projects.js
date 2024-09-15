@@ -28,7 +28,7 @@ const ProjectsPage = ({ data }) => {
   return (
     <Layout pageTitle="projects">
       <h3 className="text-3xl mb-4">here are some projects i've worked on! (or are <em>working</em> on! ;)</h3>
-      <div className="columns-1 sm:columns-2 gap-4">
+      <div className="columns-1 md:columns-2 gap-4">
         {
           data.allContentfulProject.nodes.map((project) =>
             <ProjectCard project={project} key={project.name} />
