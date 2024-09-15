@@ -41,7 +41,7 @@ const ProjectsPage = ({ data }) => {
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="mb-4 border-2 border-cyan-700">
+    <div className="mb-4 border-2 border-cyan-700 inline-block">
       <div className="sm:grid grid-cols-4 gap-0">
         <div className="sm:col-span-1">
           <GatsbyImage image={project.previewImage.gatsbyImage} alt={project.previewImage.description} className="max-w-full h-full" />
