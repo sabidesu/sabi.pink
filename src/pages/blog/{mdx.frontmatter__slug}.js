@@ -19,7 +19,7 @@ const MyHeading2 = props => <h2 className="text-3xl text-cyan-700" {...props} />
 const MyHeading3 = props => <h3 className="text-2xl text-cyan-700" {...props} />
 const MyHeading4 = props => <h4 className="text-xl text-cyan-700" {...props} />
 const MyHeading5 = props => <h5 className="text-lg text-cyan-700" {...props} />
-const MyHeading6 = props => <h6 className="text-md tracking-wider text-cyan-700" {...props} />
+const MyHeading6 = props => <h6 className="text-md tracking-wider text-cyan-700 font-bold" {...props} />
 
 const components = {
   p: MyParagraph,
