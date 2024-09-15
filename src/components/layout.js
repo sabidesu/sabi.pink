@@ -17,11 +17,7 @@ const Navbar = ({siteTitle}) => {
   const links = [
     {
       link: '/',
-      text: 'home',
-    },
-    {
-      link: '/about',
-      text: 'about',
+      text: 'about me',
     },
     {
       link: '/blog',

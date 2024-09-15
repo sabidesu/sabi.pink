@@ -28,7 +28,7 @@ const IndexPage = () => {
     <Layout pageTitle="">
       <div className="flex">
         <div className="md:grid grid-cols-3 gap-x-6 items-center">
-          <div className="md:col-span-1 flex justify-end ms-24 mb-2 sm:mb-0">
+          <div className="md:col-span-1 flex justify-end mb-2 md:mb-0">
             <StaticImage
                 alt="a red fluff dragon with pink hair and yellow horns wearing a blue hoodie looking at the viewer"
                 src="../images/pfp_ref_ratasstouille.png"
@@ -36,8 +36,10 @@ const IndexPage = () => {
             />
           </div>
           <div className="md:col-span-2 md:mr-12">
-            <h4 className="text-cyan-700 text-4xl font-thin mb-2">hi, i'm sabi!</h4>
-            <p className="mb-1">i'm just a fluff dragon that likes to program things. you can find me at the places below</p>
+            <h4 className="text-cyan-700 text-4xl font-semibold mb-1">yo, i'm sabi!</h4>
+            <h5 className="text-rose-700 text-2xl mb-2">pleasure to meet you!</h5>
+            <p className="mb-2">your local demonic fluff derg software dev! i primarily specialize in web development, but in my spare time i play a lot of VR and rhythm games, especially VRChat, ITG, and SMX</p>
+            <p className="mb-2">this website is meant to be a place for me to throw up pretty much anything and everything i want. why not check out some other places i'm online?</p>
             <Socials links={socialMedia} />
           </div>
         </div>
