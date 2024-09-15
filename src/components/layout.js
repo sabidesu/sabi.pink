@@ -6,7 +6,7 @@ const NavLink = ({link, text}) => {
   const location = useLocation()
   const isCurrentPage = link === '/' ? location.pathname === '/' : location.pathname.includes(link)
 
-  return <li><Link to={link} className={`${isCurrentPage ? 'text-rose-700 border-rose-700 hover:border-cyan-500' : 'border-rose-700/0'} border-s-2  hover:text-cyan-500 transition ps-1`}>{text}</Link></li>
+  return <li><Link to={link} className={`${isCurrentPage ? 'text-rose-700 border-rose-700 hover:border-cyan-500' : 'border-rose-700/0'} border-s-2 hover:text-cyan-500 transition ps-1`}>{text}</Link></li>
 }
 
 const Navbar = ({siteTitle}) => {
@@ -42,8 +42,8 @@ const Navbar = ({siteTitle}) => {
   ]
 
   return (
-    <nav className="flex flex-wrap items-center justify-between sticky z-20 top-2 start-0 text-slate-800 bg-white/80 backdrop-blur-sm border-4 border-cyan-700  mx-2 sm:mx-8 sm:mt-8 px-4 py-2 sm:p-4">
-      <h6 className="text-xl me-8">{siteTitle}</h6>
+    <nav className="flex flex-wrap items-center justify-between sticky z-20 top-2 start-0 text-slate-800 bg-white/80 backdrop-blur-sm border-4 border-cyan-700 mx-2 sm:mx-8 sm:mt-8 px-4 py-2 sm:p-4">
+      <h6 className="text-xl text-cyan-700 me-8">{siteTitle}</h6>
       <div className="flex md:order-2 space-x-3 md:space-x-0">
         <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-rose-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-rose-700" aria-controls="navbar-sticky" aria-expanded="false" onClick={toggleMenu}>
           <span className="sr-only">Open main menu</span>
@@ -53,7 +53,7 @@ const Navbar = ({siteTitle}) => {
         </button>
       </div>
       <div className={`items-center justify-between w-full grow md:flex md:w-auto md:order-1 ${showMenu ? 'block' : 'hidden'}`} id="navbar-sticky">
-        <ul className="flex flex-col py-2 md:p-0 font-medium space-y-2 sm:space-y-0 md:space-x-4 md:flex-row md:mt-0">
+        <ul className="flex flex-col py-2 md:p-0 font-medium space-y-2 md:space-y-0 md:space-x-4 md:flex-row md:mt-0">
           {links.map(({link, text}) => <NavLink link={link} text={text} />)}
         </ul>
       </div>
