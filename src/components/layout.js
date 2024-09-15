@@ -12,7 +12,7 @@ const Layout = ({ pageTitle, children, blogPost }) => {
     }
   `)
 
-  const navLinkStyles = "hover:text-cyan-700 transition"
+  const navLinkStyles = "hover:text-cyan-500 transition"
 
   return (
     <>
@@ -42,7 +42,7 @@ const Layout = ({ pageTitle, children, blogPost }) => {
       </div>
       <main className="mx-auto px-2 sm:px-0 md:w-5/6 mt-4">
         <div className="bg-white/80 border-4 border-cyan-700 text-slate-800 p-4">
-          {blogPost && <Link to="/blog" className="text-light">&larr; back to posts</Link>}
+          {blogPost && <Link to="/blog" className="hover:text-cyan-500 transition">&larr; back to posts</Link>}
           {pageTitle && <h1 className="text-cyan-700 text-5xl font-normal pb-2">{pageTitle}</h1>}
           {children}
         </div>
