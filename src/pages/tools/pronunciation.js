@@ -44,7 +44,7 @@ const PronunciationGenerator = () => {
 
   return (
     <div id={customButtons} className="text-wrap text-break">
-      <p className="mb-3">{pronunciation}</p>
+      <p className="break-words mb-3">{pronunciation}</p>
       <button className={'border border-rose-700 text-center text-rose-700 hover:text-neutral-50 no-underline hover:bg-rose-700 transition p-2'} onClick={generatePronunciation}>like this 🔊</button>
     </div>
   )
