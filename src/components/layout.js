@@ -43,7 +43,7 @@ const Navbar = ({siteTitle}) => {
 
   return (
     <nav className="flex flex-wrap items-center justify-between sticky z-20 top-2 start-0 text-slate-800 bg-white/80 backdrop-blur-sm border-4 border-cyan-700 mx-2 sm:mx-8 sm:mt-8 px-4 py-2 sm:p-4">
-      <h6 className="text-xl text-cyan-700 me-8">{siteTitle}</h6>
+      <h6 className="text-xl sm:text-2xl text-cyan-700 me-8">{siteTitle}</h6>
       <div className="flex md:order-2 space-x-3 md:space-x-0">
         <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2  justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-rose-700 hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-rose-700" aria-controls="navbar-sticky" aria-expanded="false" onClick={toggleMenu}>
           <span className="sr-only">Open main menu</span>
