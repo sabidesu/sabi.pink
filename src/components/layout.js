@@ -6,7 +6,7 @@ const NavLink = ({link, text}) => {
   const location = useLocation()
   const isCurrentPage = link === '/' ? location.pathname === '/' : location.pathname.includes(link)
 
-  return <li><Link to={link} className={`${isCurrentPage ? 'text-rose-700 border-rose-700 hover:border-cyan-500' : 'border-rose-700/0'} border-s-2 hover:text-cyan-500 transition ps-1`}>{text}</Link></li>
+  return <li><Link to={link} className={`${isCurrentPage ? 'text-rose-700 border-rose-700 hover:border-rose-400 hover:text-rose-400' : 'border-rose-700/0 hover:text-cyan-500'} border-s-2 transition ps-1`}>{text}</Link></li>
 }
 
 const Navbar = ({siteTitle}) => {
