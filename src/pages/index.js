@@ -4,25 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from '../components/seo'
 import { protoBg } from '../styles/proto_bg.module.css'
 
-const socialMedia = [
-  {
-    href: "https://twitter.com/sabidesu1",
-    name: "twitter",
-  },
-  {
-    href: "https://tumblr.com/sabidesu",
-    name: "tumblr",
-  },
-  {
-    href: "https://bsky.app/profile/sabi.pink",
-    name: "bluesky",
-  },
-  {
-    href: "https://github.com/sabidesu",
-    name: "github",
-  },
-]
-
 const IndexPage = () => {
   return (
     <Layout pageTitle="">
@@ -40,7 +21,7 @@ const IndexPage = () => {
             <h5 className="text-rose-700 text-2xl mb-2">pleasure to meet you!</h5>
             <p className="mb-2">your local demonic fluff derg software dev! i primarily specialize in web development, but in my spare time i play a lot of VR and rhythm games, especially VRChat, ITG, and SMX</p>
             <p className="mb-2">this website is meant to be a place for me to throw up pretty much anything and everything i want. why not check out some other places i'm online?</p>
-            <Socials links={socialMedia} />
+            <Socials />
           </div>
         </div>
       </div>
@@ -63,7 +44,30 @@ const SocialButton = ({ href, name, last }) => {
   )
 }
 
-const Socials = ({ links }) => {
+const Socials = () => {
+  const links = [
+    {
+      href: "https://twitter.com/sabidesu1",
+      name: "twitter",
+    },
+    {
+      href: "https://tumblr.com/sabidesu",
+      name: "tumblr",
+    },
+    {
+      href: "https://bsky.app/profile/sabi.pink",
+      name: "bluesky",
+    },
+    {
+      href: "https://www.last.fm/user/OwOsabi",
+      name: "last.fm",
+    },
+    {
+      href: "https://github.com/sabidesu",
+      name: "github",
+    },
+  ]
+
   return (
     <>
       <ul id="social links" className="hidden sm:flex flex-row ps-0 mb-0">
