@@ -49,7 +49,7 @@ const IndexPage = () => {
 const SocialLink = ({ href, name, last }) => {
   return (
     <>
-      <li className="me-2 my-auto"><a href={href} className="no-underline text-rose-700">{name}</a></li>
+      <li className="me-2 my-auto"><a href={href} className="no-underline text-rose-700 hover:text-rose-400 transition">{name}</a></li>
       {!last && <li className="my-auto me-2">・</li>}
     </>
   )
