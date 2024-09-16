@@ -28,12 +28,12 @@ const Navbar = ({siteTitle}) => {
       text: 'projects',
     },
     {
-      link: '/tools/pronunciation',
-      text: 'pronunciation',
-    },
-    {
       link: '/art',
       text: 'art',
+    },
+    {
+      link: '/tools/pronunciation',
+      text: 'pronunciation',
     },
     {
       link: '/protogens',
