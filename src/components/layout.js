@@ -75,8 +75,8 @@ const Layout = ({ pageTitle, children, blogPost }) => {
   return (
     <>
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <main className="sm:w-5/6 mx-auto px-2 sm:px-0 pb-2 mt-4">
-        <div className="bg-white/80 backdrop-blur-sm border-4 border-cyan-700 text-slate-800 p-4">
+      <main className="xl:max-w-screen-2xl lg:max-w-screen-lg mx-auto px-2 sm:px-0 pb-2 mt-4">
+        <div className="bg-white/80 backdrop-blur-sm border-4 border-cyan-700 text-slate-800 p-4 mx-0 sm:mx-8">
           {blogPost && <Link to="/blog" className="hover:text-cyan-500 transition">&larr; back to posts</Link>}
           {pageTitle && <h1 className="text-cyan-700 text-5xl font-semibold mb-2">{pageTitle}</h1>}
           {children}
