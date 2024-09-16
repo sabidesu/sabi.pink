@@ -27,7 +27,7 @@ export const query = graphql`
 const ArtPage = ({ data }) => {
   return (
     <Layout pageTitle="art">
-      <h3 className="text-3xl mb-4">have some art i've acquired!</h3>
+      <h3 className="text-3xl mb-4">here's some art i've acquired!</h3>
       <div className="columns-sm gap-4">
         {
           data.allContentfulArt.nodes.map((art) =>
