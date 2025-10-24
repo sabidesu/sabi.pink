@@ -1,5 +1,15 @@
 const pastPronunciationsDiv = document.getElementById("past-pronunciations");
 
+const makeAndPronounce = (_event) => {
+  const pronunciation = generatePronunciation();
+  pronounce(pronunciation);
+  updatePronunciation(pronunciation);
+  createPastPronunciation(pronunciation);
+};
+
+const makePronunciationsButton = document.getElementById("make-pronunciation");
+makePronunciationsButton.addEventListener("click", makeAndPronounce);
+
 const headsOrTails = () => {
   // q: why is this coin weighted?
   // a: the longer the pronunciation the better
@@ -50,13 +60,6 @@ const generatePronunciation = () => {
 const updatePronunciation = (pronunciation) => {
   const p = document.getElementById("pronunciation");
   p.textContent = pronunciation;
-};
-
-const makeAndPronounce = () => {
-  const pronunciation = generatePronunciation();
-  pronounce(pronunciation);
-  updatePronunciation(pronunciation);
-  createPastPronunciation(pronunciation);
 };
 
 const createPastPronunciation = (pronunciation) => {
