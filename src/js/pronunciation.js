@@ -1,10 +1,14 @@
 const pastPronunciationsDiv = document.getElementById("past-pronunciations");
+const pastPronunciations = [];
 
 const makeAndPronounce = (_event) => {
   const pronunciation = generatePronunciation();
+  pastPronunciations.push(pronunciation);
+
   pronounce(pronunciation);
   updatePronunciation(pronunciation);
-  createPastPronunciation(pronunciation);
+  if (pastPronunciations.length > 1)
+    createPastPronunciation(pastPronunciations[pastPronunciations.length - 2]);
 };
 
 const makePronunciationsButton = document.getElementById("make-pronunciation");
