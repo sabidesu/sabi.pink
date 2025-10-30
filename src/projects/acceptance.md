@@ -7,7 +7,10 @@ description: >-
 view_link:
 source_link: https://github.com/sabidesu/cs1110_final_project
 source_text: github
-permalink: false
+preview_img: /img/projects/acceptance-preview.png
+preview_alt: >-
+  a screenshot of a game. the player, a blue cat with a transgender pride flag
+  heart on it's shirt, has collected three coins, and stands on a platform at
+  the top of the screen. two red cat enemies stand beneath them, with gray
+  hearts on their shirts
 ---
-
-![a screenshot of a game. the player, a blue cat with a transgender pride flag heart on it's shirt, has collected three coins, and stands on a platform at the top of the screen. two red cat enemies stand beneath them, with gray hearts on their shirts](/img/projects/acceptance-preview.png)

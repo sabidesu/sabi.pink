@@ -7,7 +7,8 @@ description: >-
 view_link: https://youtu.be/dQw4w9WgXcQ
 source_link: https://github.com/sabidesu/old.sabi.pink
 source_text: github
-permalink: false
+preview_img: /img/projects/old-site-preview.png
+preview_alt: >-
+  a screenshot of a website with the text "hi, i'm sabi!" in blue, a
+  description in white, and pink links, all on a black background
 ---
-
-![a screenshot of a website with the text "hi, i'm sabi!" in blue, a description in white, and pink links, all on a black background](/img/projects/old-site-preview.png)

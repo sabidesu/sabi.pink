@@ -8,7 +8,8 @@ description: >-
 view_link:
 source_link: https://github.com/sabidesu/mnmk_vrc_bot
 source_text: github
-permalink: false
+preview_img: /img/projects/mnmk-preview.jpg
+preview_alt: >-
+  an ms paint (new version) doodle of a hastily-drawn guy with a cowboy hat
+  giving a thumbs-up, with the letters M N M K drawn onto his hat
 ---
-
-![an ms paint (new version) doodle of a hastily-drawn guy with a cowboy hat giving a thumbs-up, with the letters M N M K drawn onto his hat](/img/projects/mnmk-preview.jpg)
