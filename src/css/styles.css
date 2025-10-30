@@ -12,3 +12,7 @@ h6 {
 .title__subtitle {
   font-family: "FOT-NewRodin Pro";
 }
+
+.project-card {
+  margin-top: 2rem;
+}
