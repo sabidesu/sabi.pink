@@ -1,0 +1,23 @@
+---
+title: projects
+layout: layouts/base.njk
+eleventyExcludeFromCollections: true
+---
+
+<h3>things i've made or are making</h3>
+
+{% for project in collections.projects %}
+<div>
+  {{- project.content -}}
+
+  <h3>{{ project.data.name }}</h3>
+  <p>{{ project.data.description }}</p>
+
+  {% if project.data.view_link %}
+  <a href="{{project.data.view_link}}">view</a>
+  {% endif %}
+  {% if project.data.source_link %}
+  <a href="{{project.data.source_link}}">{{project.data.source_text}}</a>
+  {% endif %}
+</div>
+{% endfor %}
