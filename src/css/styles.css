@@ -20,6 +20,24 @@ body {
   }
 }
 
+.layout {
+  display: flex;
+
+  nav {
+    width: 20%;
+    flex: none; /* so this never resizes */
+    margin-right: 1rem;
+  }
+
+  main {
+    min-width: 0; /* so this never overflows */
+  }
+}
+
+.title {
+  margin-top: 0;
+}
+
 .title__subtitle {
   font-family: "FOT-NewRodin Pro", sans-serif;
 }

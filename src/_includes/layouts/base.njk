@@ -11,13 +11,15 @@
     <header>
       {% include 'partials/header.njk' %}
     </header>
-    <nav>{% include 'partials/navigation.njk' %}</nav>
-    <main>
-      <h2>{{ title }}</h2>
-      {% if subtitle %}
-      <p class="title__subtitle">{{ subtitle }}<p>
-      {% endif %}
-      {{ content | safe }}
-    </main>
+    <div class="layout">
+      <nav>{% include 'partials/navigation.njk' %}</nav>
+      <main>
+        <h2 class="title">{{ title }}</h2>
+        {% if subtitle %}
+        <p class="title__subtitle">{{ subtitle }}<p>
+        {% endif %}
+        {{ content | safe }}
+      </main>
+    </div>
   </body>
 </html>
