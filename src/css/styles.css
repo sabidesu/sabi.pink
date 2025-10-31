@@ -16,16 +16,34 @@ body {
 
   font-family: "Space Grotesk", sans-serif;
 
-  /*background-image: url("/img/protogens_tile.png");
-  background-size: 50%;*/
+  background-image: url("/img/protogens_tile.png");
+  background-size: 50%;
 
   @media screen and (width <= 720px) {
     width: 95%;
   }
 }
 
+header {
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  border: 2px solid darkslategray;
+  background-color: darkcyan;
+  color: white;
+}
+
 .layout {
   display: flex;
+
+  > * {
+    /* style only direct descendants */
+    padding: 1rem;
+
+    border: 2px solid darkslategray;
+    background-color: darkcyan;
+    color: white;
+  }
 
   nav {
     width: 20%;
@@ -34,8 +52,13 @@ body {
   }
 
   main {
-    min-width: 0; /* so this never overflows */
+    min-width: 0; /* so this never overflows... */
+    flex: auto; /* ...but still grows to fill remaining space */
   }
+}
+
+.header__title {
+  margin: 0 0;
 }
 
 .title {
@@ -48,4 +71,8 @@ body {
 
 .project-card {
   margin-top: 2rem;
+}
+
+.nav__link {
+  font-family: "FOT-NewRodin Pro", sans-serif;
 }
