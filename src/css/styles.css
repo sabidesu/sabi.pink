@@ -1,6 +1,11 @@
 @import url("new_rodin_pro.css");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
+:root {
+  --partition-border-color: #4027f4;
+  --partition-bg-color: #030e6b;
+}
+
 h1,
 h2,
 h3,
@@ -28,9 +33,18 @@ header {
   margin-bottom: 1rem;
   padding: 1rem;
 
-  border: 2px solid #4027f4;
-  background-color: #030e6b;
+  border: 2px solid var(--partition-border-color);
+  background-color: var(--partition-bg-color);
   color: white;
+}
+
+a {
+  color: #ffa6c7;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #f6607b;
 }
 
 .layout {
@@ -40,8 +54,8 @@ header {
     /* style only direct descendants */
     padding: 1rem;
 
-    border: 2px solid #4027f4;
-    background-color: #030e6b;
+    border: 2px solid var(--partition-border-color);
+    background-color: var(--partition-bg-color);
     color: white;
   }
 
@@ -75,4 +89,5 @@ header {
 
 .nav__link {
   font-family: "FOT-NewRodin Pro", sans-serif;
+  text-decoration: none;
 }
