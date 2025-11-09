@@ -4,6 +4,7 @@
 :root {
   --partition-border-color: #4027f4;
   --partition-bg-color: #030e6b;
+  --title-font: "FOT-NewRodin Pro", sans-serif;
 }
 
 h1,
@@ -12,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "FOT-NewRodin Pro", sans-serif;
+  font-family: var(--title-font);
 }
 
 body {
@@ -82,7 +83,7 @@ a:hover {
 }
 
 .title__subtitle {
-  font-family: "FOT-NewRodin Pro", sans-serif;
+  font-family: var(--title-font);
 }
 
 .project-card {
@@ -90,12 +91,12 @@ a:hover {
 }
 
 .nav__link {
-  font-family: "FOT-NewRodin Pro", sans-serif;
+  font-family: var(--title-font);
   text-decoration: none;
 }
 
 .nav__section-header {
-  font-family: "FOT-NewRodin Pro", sans-serif;
+  font-family: var(--title-font);
   font-style: italic;
   text-align: center;
   margin-top: 0;
