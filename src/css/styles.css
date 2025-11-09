@@ -16,7 +16,7 @@ body {
 
   font-family: "Space Grotesk", sans-serif;
 
-  background-image: url("/img/protogens_tile.png");
+  background-image: url("/img/protogens_tile_gm.png");
   background-size: 50%;
 
   @media screen and (width <= 720px) {
@@ -28,8 +28,8 @@ header {
   margin-bottom: 1rem;
   padding: 1rem;
 
-  border: 2px solid darkslategray;
-  background-color: darkcyan;
+  border: 2px solid #4027f4;
+  background-color: #030e6b;
   color: white;
 }
 
@@ -40,8 +40,8 @@ header {
     /* style only direct descendants */
     padding: 1rem;
 
-    border: 2px solid darkslategray;
-    background-color: darkcyan;
+    border: 2px solid #4027f4;
+    background-color: #030e6b;
     color: white;
   }
 
