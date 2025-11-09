@@ -33,7 +33,7 @@ header {
   margin-bottom: 1rem;
   padding: 1rem;
 
-  border: 2px solid var(--partition-border-color);
+  border: 2px outset var(--partition-border-color);
   background-color: var(--partition-bg-color);
   color: white;
 }
@@ -54,7 +54,7 @@ a:hover {
     /* style only direct descendants */
     padding: 1rem;
 
-    border: 2px solid var(--partition-border-color);
+    border: 2px outset var(--partition-border-color);
     background-color: var(--partition-bg-color);
     color: white;
   }
