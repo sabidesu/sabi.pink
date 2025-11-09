@@ -73,6 +73,8 @@ a:hover {
 
 .header__title {
   margin: 0 0;
+  font-style: italic;
+  text-align: right;
 }
 
 .title {
@@ -90,4 +92,20 @@ a:hover {
 .nav__link {
   font-family: "FOT-NewRodin Pro", sans-serif;
   text-decoration: none;
+}
+
+.nav__section-header {
+  font-family: "FOT-NewRodin Pro", sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0;
+}
+
+.nav__divider {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.badge {
+  image-rendering: pixelated;
 }
