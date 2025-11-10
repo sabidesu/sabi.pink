@@ -32,11 +32,15 @@ body {
 
 header {
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 5rem 1rem 1rem 1rem;
 
-  border: 2px outset var(--partition-border-color);
-  background-color: var(--partition-bg-color);
+  background-size: 50%;
+  background:
+    linear-gradient(360deg, var(--partition-bg-color) 0%, rgba(0, 0, 0, 0) 60%),
+    url("/img/protogens_tile.png");
   color: white;
+
+  text-align: right;
 }
 
 a {
@@ -73,9 +77,14 @@ a:hover {
 }
 
 .header__title {
-  margin: 0 0;
+  margin: 0 0 -0.75rem 0;
+  padding-right: 0.5rem;
   font-style: italic;
-  text-align: right;
+}
+
+.header__subtitle {
+  font-family: var(--title-font);
+  margin: 0;
 }
 
 .title {
