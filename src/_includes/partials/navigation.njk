@@ -1,20 +1,30 @@
 <div class="nav__section">
-  <p class="nav__section-header">explore</p>
-  {% for link in [{ href: '/', text: 'about me' }, { href: '/blog', text: 'blog' }, { href: '/projects', text: 'projects' }, { href: '/art', text: 'art' }, { href: '/protogens', text: 'protogens' }] %}
-  <a class="nav__link" href="{{ link.href }}">
-    <div>
+  <h2 class="nav__section-header">explore</h2>
+  <div class="nav__section-content">
+    {% for link in
+      [
+        { href: '/', text: 'about me' },
+        { href: '/blog', text: 'blog' },
+        { href: '/projects', text: 'projects' },
+        { href: '/art', text: 'art' },
+        { href: '/protogens', text: 'protogens' }
+      ]
+    %}
+    <a class="nav__link" href="{{ link.href }}">
       {{ link.text }}
-    </div>
-  </a>
-  {% endfor %}
+    </a>
+    {% endfor %}
+  </div>
 </div>
 <span class="nav__divider"></span>
 <div class="nav__section">
-  <p class="nav__section-header">friends</p>
-  <a class="nav__link" href="https://floral.lgbt" target=blank>
-    <img class="badge" src="http://floral.lgbt/img/buttons/RazzBadge.gif" alt="floral dot lgbt" title="razz">
-  </a>
-  <a class="nav__link" href="https://cavernofremembrance.neocities.org" target=blank>
-    <img class="badge" src="https://cavernofremembrance.neocities.org/gifs/cavernofremembrance.gif" alt="cavern of remembrance" title="roxy">
-  </a>
+  <h2 class="nav__section-header" style="margin-bottom: 1rem;">friends</h2>
+  <div class="nav__section-content nav__section-content--centered">
+    <a class="nav__link" href="https://floral.lgbt" target=blank>
+        <img class="badge" src="http://floral.lgbt/img/buttons/RazzBadge.gif" alt="floral dot lgbt" title="razz">
+    </a>
+    <a class="nav__link" href="https://cavernofremembrance.neocities.org" target=blank>
+      <img class="badge" src="https://cavernofremembrance.neocities.org/gifs/cavernofremembrance.gif" alt="cavern of remembrance" title="roxy">
+    </a>
+  </div>
 </div>

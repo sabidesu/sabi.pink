@@ -102,13 +102,21 @@ a:hover {
 .nav__link {
   font-family: var(--title-font);
   text-decoration: none;
+  display: block;
 }
 
 .nav__section-header {
   font-family: var(--title-font);
   font-style: italic;
+  font-weight: normal;
+  font-size: 1rem;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav__section-content--centered {
+  text-align: center;
 }
 
 .nav__divider {
