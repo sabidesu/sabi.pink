@@ -89,10 +89,12 @@ a:hover {
 
 .title {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .title__subtitle {
   font-family: var(--title-font);
+  margin-top: 0;
 }
 
 .project-card {
