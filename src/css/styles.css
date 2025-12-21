@@ -67,6 +67,7 @@ a:hover {
 
 .layout {
   display: flex;
+  margin-bottom: 1rem;
 
   > * {
     /* style only direct descendants */
@@ -96,6 +97,7 @@ a:hover {
 
   @media (width < 992px) {
     display: block;
+    margin-bottom: 0.75rem;
   }
 }
 
