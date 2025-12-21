@@ -22,5 +22,6 @@ module.exports = function (eleventyConfig) {
       output: "public",
       includes: "_includes",
     },
+    htmlTemplateEngine: "njk",
   };
 };
