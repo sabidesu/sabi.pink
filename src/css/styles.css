@@ -110,16 +110,19 @@ a:hover {
 .header__subtitle {
   font-family: var(--title-font);
   margin: 0;
+  line-height: 1.5;
 }
 
 .title {
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 1.5;
 }
 
 .title__subtitle {
   font-family: var(--title-font);
   margin-top: 0;
+  line-height: 1.5;
 }
 
 .project-card {
