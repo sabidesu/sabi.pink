@@ -53,7 +53,7 @@ header {
 
   @media (width < 992px) {
     margin-bottom: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -87,6 +87,7 @@ a:hover {
     @media (width < 992px) {
       margin-right: 0rem;
       margin-bottom: 0.5rem;
+      padding: 0.5rem 1rem;
       width: 90%;
     }
   }
@@ -140,6 +141,7 @@ a:hover {
 
   @media (width < 992px) {
     display: inline;
+    white-space: nowrap;
   }
 }
 
@@ -154,11 +156,16 @@ a:hover {
 }
 
 .nav__section-content {
+  @media (width < 992px) {
+    display: flex;
+    overflow: auto;
+  }
+
   /* puts spacing between every child element, removes spacing from edges */
   > * {
     @media (width < 992px) {
-      margin-left: 0.25rem;
-      margin-right: 0.25rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
     }
   }
 
