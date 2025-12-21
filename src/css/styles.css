@@ -95,6 +95,8 @@ a:hover {
   main {
     min-width: 0; /* so this never overflows... */
     flex: auto; /* ...but still grows to fill remaining space */
+
+    line-height: 1.5;
   }
 
   @media (width < 992px) {
