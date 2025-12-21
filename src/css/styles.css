@@ -66,6 +66,12 @@ a:hover {
   color: #f6607b;
 }
 
+article {
+  img {
+    max-width: 100%;
+  }
+}
+
 .layout {
   display: flex;
   margin-bottom: 1rem;
