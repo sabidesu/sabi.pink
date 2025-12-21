@@ -7,6 +7,14 @@
   --title-font: "FOT-NewRodin Pro", sans-serif;
 }
 
+.mobile-hide {
+  display: inherit;
+
+  @media (width < 992px) {
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -25,7 +33,7 @@ body {
   background-image: url("/img/protogens_tile_gm.png");
   background-size: 50%;
 
-  @media screen and (width < 992px) {
+  @media (width < 992px) {
     width: 95%;
   }
 }
@@ -41,6 +49,11 @@ header {
   color: white;
 
   text-align: right;
+
+  @media (width < 992px) {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
 }
 
 a {
@@ -68,11 +81,21 @@ a:hover {
     width: 20%;
     flex: none; /* so this never resizes */
     margin-right: 1rem;
+
+    @media (width < 992px) {
+      margin-right: 0rem;
+      margin-bottom: 0.5rem;
+      width: 90%;
+    }
   }
 
   main {
     min-width: 0; /* so this never overflows... */
     flex: auto; /* ...but still grows to fill remaining space */
+  }
+
+  @media (width < 992px) {
+    display: block;
   }
 }
 
@@ -110,6 +133,10 @@ a:hover {
   font-family: var(--title-font);
   text-decoration: none;
   display: block;
+
+  @media (width < 992px) {
+    display: inline;
+  }
 }
 
 .nav__section-header {
@@ -120,6 +147,28 @@ a:hover {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.nav__section-content {
+  /* puts spacing between every child element, removes spacing from edges */
+  > * {
+    @media (width < 992px) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+  }
+
+  > *:last-child {
+    @media (width < 992px) {
+      margin-right: 0;
+    }
+  }
+
+  > *:first-child {
+    @media (width < 992px) {
+      margin-left: 0;
+    }
+  }
 }
 
 .nav__section-content--centered {
