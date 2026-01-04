@@ -1,0 +1,55 @@
+.nav__link {
+  font-family: var(--title-font);
+  display: block;
+
+  @media (width < 992px) {
+    display: inline;
+    white-space: nowrap;
+  }
+}
+
+.nav__section-header {
+  font-family: var(--title-font);
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav__section-content {
+  @media (width < 992px) {
+    display: flex;
+    overflow: auto;
+  }
+
+  /* puts spacing between every child element, removes spacing from edges */
+  > * {
+    @media (width < 992px) {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  > *:last-child {
+    @media (width < 992px) {
+      margin-right: 0;
+    }
+  }
+
+  > *:first-child {
+    @media (width < 992px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.nav__section-content--centered {
+  text-align: center;
+}
+
+.nav__divider {
+  margin-bottom: 1rem;
+  display: block;
+}

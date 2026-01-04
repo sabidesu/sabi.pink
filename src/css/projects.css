@@ -1,0 +1,14 @@
+.project-card {
+  margin-top: 2rem;
+}
+
+.project-card__preview {
+  max-width: 100%;
+  max-height: 256px;
+}
+
+.project-card {
+  .project-card__link {
+    display: inline;
+  }
+}
