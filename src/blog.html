@@ -13,6 +13,13 @@ layout: layouts/base.njk
     {{ post.data.date.toLocaleDateString('en-US', { day: 'numeric', year:
     'numeric', month: 'short' }) | lower }}
   </p>
+  <div class="blog-preview__tags">
+    {% for tag in post.data.post_tags %}
+    <span class="blog-preview__tag">
+      [ {{ tag }} ]
+    </span>
+    {% endfor %}
+  </div>
   <p class="blog-preview__tagline">
     {{ post.data.tagline }}
   </p>

@@ -6,8 +6,18 @@
 
   .blog-preview__date {
     margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+
+  .blog-preview__tags {
+    margin-top: 0;
     margin-bottom: 0.3rem;
     font-size: 0.9rem;
+  }
+
+  .blog-preview__tag {
+    white-space: nowrap;
   }
 
   .blog-preview__tagline {

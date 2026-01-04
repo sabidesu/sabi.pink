@@ -1,6 +1,9 @@
 ---
 title: website redesign
 tagline: f*ck opinionated frameworks (but if you like them that's okay)
+post_tags:
+  - site update
+  - programming
 date: 2024-10-14
 permalink: /blog/website-redesign/
 ---
