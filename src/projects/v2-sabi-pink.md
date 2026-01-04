@@ -1,5 +1,5 @@
 ---
-name: old.sabi.pink
+name: v2.sabi.pink
 description: >-
   the previous version of my website, built with gatsby since i'm familiar
   with react and i wanted to use a static site generator that worked with
