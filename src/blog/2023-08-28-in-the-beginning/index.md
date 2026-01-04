@@ -1,5 +1,6 @@
 ---
 title: in the beginning
+tagline: genesis; birth; inception; commencement
 date: 2023-08-28
 permalink: /blog/in-the-beginning/
 ---

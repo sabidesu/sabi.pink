@@ -1,5 +1,6 @@
 ---
 title: url change and obsidian
+tagline: i prefer shorter urls lol
 date: 2023-09-18
 permalink: /blog/url-change-and-obsidian/
 ---

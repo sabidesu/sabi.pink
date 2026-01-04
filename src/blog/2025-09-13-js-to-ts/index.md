@@ -1,5 +1,6 @@
 ---
 title: javascript to typescript
+tagline: i wanted to learn typescript, so i rewrote the site with it
 date: 2025-09-13
 permalink: /blog/js-to-ts/
 ---

@@ -1,5 +1,6 @@
 ---
 title: website redesign
+tagline: f*ck opinionated frameworks (but if you like them that's okay)
 date: 2024-10-14
 permalink: /blog/website-redesign/
 ---

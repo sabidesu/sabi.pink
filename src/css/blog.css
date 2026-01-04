@@ -1,0 +1,16 @@
+.blog-preview {
+  .blog-preview__title {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  .blog-preview__date {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .blog-preview__tagline {
+    margin-top: 0.3rem;
+  }
+}
