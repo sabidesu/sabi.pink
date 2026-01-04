@@ -142,6 +142,16 @@ article {
   max-height: 256px;
 }
 
+.project-card {
+  .project-card__link {
+    display: inline;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 .nav__link {
   font-family: var(--title-font);
   text-decoration: none;

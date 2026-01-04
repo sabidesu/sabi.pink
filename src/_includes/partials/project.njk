@@ -5,9 +5,17 @@
   <p>{{ project.data.description }}</p>
 
   {% if project.data.view_link %}
-  <a href="{{ project.data.view_link }}">view</a>
+  <div class="project-card__link">
+    [
+    <a href="{{ project.data.view_link }}">view</a>
+    ]
+  </div>
   {% endif %}
   {% if project.data.source_link %}
-  <a href="{{ project.data.source_link }}">{{ project.data.source_text }}</a>
+  <div class="project-card__link">
+    [
+    <a href="{{ project.data.source_link }}">{{ project.data.source_text }}</a>
+    ]
+  </div>
   {% endif %}
 </div>
