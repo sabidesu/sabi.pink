@@ -141,3 +141,7 @@ article {
 .badge {
   image-rendering: pixelated;
 }
+
+.home__social-link {
+  white-space: nowrap;
+}
