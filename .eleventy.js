@@ -22,7 +22,7 @@ module.exports = function (eleventyConfig) {
   // https://www.11ty.dev/docs/plugins/rss/
   eleventyConfig.setTemplateFormats("html,njk,md");
   eleventyConfig.addPlugin(feedPlugin, {
-    type: "rss",
+    type: "atom",
     outputPath: "/feed.xml",
     collection: {
       name: "blog",
