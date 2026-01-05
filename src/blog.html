@@ -15,7 +15,7 @@ layout: layouts/base.njk
   <div class="blog-preview__tags">
     {% for tag in post.data.post_tags %}
     <span class="blog-preview__tag">
-      [ {{ tag }} ]
+      {{ tag }}
     </span>
     {% endfor %}
   </div>
