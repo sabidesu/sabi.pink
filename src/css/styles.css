@@ -54,7 +54,7 @@ header {
   background-size: 50%;
   background:
     linear-gradient(360deg, var(--darkest-blue) 0%, rgba(0, 0, 0, 0) 60%),
-    url("/img/protogens_tile.png");
+    url("/img/header-banner.png");
   color: white;
 
   text-align: right;
