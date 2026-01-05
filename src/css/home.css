@@ -1,0 +1,8 @@
+.home__social-link {
+  white-space: nowrap;
+}
+
+.home__pfp {
+  max-width: 100%;
+  max-height: 256px;
+}

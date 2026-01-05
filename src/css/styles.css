@@ -5,6 +5,7 @@
 @import url("projects.css");
 @import url("nav.css");
 @import url("pronunciation.css");
+@import url("home.css");
 
 :root {
   --darkest-blue: #033152;
@@ -174,8 +175,4 @@ article {
 
 .badge {
   image-rendering: pixelated;
-}
-
-.home__social-link {
-  white-space: nowrap;
 }
