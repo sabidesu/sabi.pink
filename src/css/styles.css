@@ -114,6 +114,7 @@ article {
 .layout {
   display: flex;
   margin-bottom: 1rem;
+  gap: 1rem;
 
   > * {
     /* style only direct descendants */
@@ -125,9 +126,9 @@ article {
   }
 
   nav {
-    width: 20%;
-    flex: none; /* so this never resizes */
-    margin-right: 1rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 10rem;
 
     @media (width < 992px) {
       margin-right: 0rem;
@@ -138,8 +139,7 @@ article {
   }
 
   main {
-    min-width: 0; /* so this never overflows... */
-    flex: auto; /* ...but still grows to fill remaining space */
+    flex: auto; /* should fill remaining space, but never overflow */
 
     line-height: 1.5;
   }
