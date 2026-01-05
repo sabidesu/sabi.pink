@@ -5,7 +5,7 @@ description: >-
   with react and i wanted to use a static site generator that worked with
   react and let me easily add content via contentful
 view_link: https://youtu.be/dQw4w9WgXcQ
-source_link: https://github.com/sabidesu/old.sabi.pink
+source_link: https://github.com/sabidesu/v2.sabi.pink
 source_text: github
 preview_img: /img/projects/old-site-preview.png
 preview_alt: >-
