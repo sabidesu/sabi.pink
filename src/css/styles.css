@@ -6,9 +6,11 @@
 @import url("nav.css");
 
 :root {
-  --partition-border-color: #033152;
-  --partition-bg-color: #044778;
+  --darkest-blue: #033152;
+  --dark-blue: #044778;
   --title-font: "FOT-NewRodin Pro", sans-serif;
+  --pink: #ffa6c7;
+  --dark-pink: #f6607b;
 }
 
 .mobile-hide {
@@ -49,7 +51,7 @@ header {
 
   background-size: 50%;
   background:
-    linear-gradient(360deg, var(--partition-bg-color) 0%, rgba(0, 0, 0, 0) 60%),
+    linear-gradient(360deg, var(--darkest-blue) 0%, rgba(0, 0, 0, 0) 60%),
     url("/img/protogens_tile.png");
   color: white;
 
@@ -62,18 +64,36 @@ header {
 }
 
 a {
-  color: #ffa6c7;
+  color: var(--pink);
   transition: color 0.2s;
   text-decoration: none;
 }
 
 a:hover {
-  color: #f6607b;
+  color: var(--dark-pink);
+}
+
+hr {
+  color: var(--darkest-blue);
 }
 
 article {
   img {
     max-width: 100%;
+  }
+
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-left: var(--pink) 2px solid;
+  }
+
+  code {
+    background-color: var(--darkest-blue);
+    padding: 2px;
+    color: var(--pink);
   }
 }
 
@@ -85,8 +105,8 @@ article {
     /* style only direct descendants */
     padding: 1rem;
 
-    border: 2px outset var(--partition-border-color);
-    background-color: var(--partition-bg-color);
+    border: 2px outset var(--darkest-blue);
+    background-color: var(--dark-blue);
     color: white;
   }
 
