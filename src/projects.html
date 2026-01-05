@@ -6,4 +6,5 @@ layout: layouts/base.njk
 
 {% for project in collections.projects %}
 {% include "partials/project.njk" %}
+{% if not loop.last %}<hr />{% endif %}
 {% endfor %}
