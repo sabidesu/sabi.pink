@@ -24,3 +24,25 @@
     margin-top: 0.3rem;
   }
 }
+
+.blog-post {
+  .blog-post__date {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+
+  .blog-post__tags {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .blog-preview__tag {
+    white-space: nowrap;
+  }
+
+  .blog-post__back {
+    margin-bottom: 0;
+  }
+}

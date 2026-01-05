@@ -1,3 +1,4 @@
+const { DateTime } = require("luxon");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
@@ -38,6 +39,15 @@ module.exports = function (eleventyConfig) {
         email: "",
       },
     },
+  });
+
+  // stolen from:
+  // https://git.gay/Razz/floral.lgbt/src/commit/48b67b8ebc9ad92bd52a9aece220300a0787e41d/.eleventy.js
+  eleventyConfig.addFilter("readableDate", (dateString) => {
+    dateObj = new Date(dateString);
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "LLL dd, yyyy",
+    );
   });
 
   return {

@@ -2,4 +2,16 @@
 layout: layouts/base.njk
 ---
 
-<article>{{ content | safe }}</article>
+<div class="blog-post">
+  <p class="blog-post__date">{{ date | readableDate | lower }}</p>
+  <div class="blog-post__tags">
+    {% for tag in post_tags %}
+    <span class="blog-post__tag">
+      [ {{ tag }} ]
+    </span>
+    {% endfor %}
+  </div>
+
+  <article class="blog-post__article">{{ content | safe }}</article>
+  <p class="blog-post__back"><a href="/blog">&#8592; back to blog index</a></p>
+</div>
