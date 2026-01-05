@@ -6,14 +6,16 @@ scripts: |
   <script src="./js/pronunciation.js" defer></script>
 ---
 
-<button id="make-pronunciation" title="make a new pronunciation" type="button">
-  like this: 🔊
-</button>
-<p id="pronunciation"></p>
+<div class="pronunciation--top">
+  <button id="make-pronunciation" class="pronunciation__button" title="make a new pronunciation" type="button">
+    like this: 🔊
+  </button>
+  <p id="pronunciation" class="pronunciation__text"></p>
+</div>
 
 <div id="past-pronunciations">
-  <div id="temp-pronunciation" style="display: none">
-    <button title="play pronunciation">🔊</button>
-    <p></p>
+  <div id="temp-pronunciation" class="pronunciation" style="display: none">
+    <button title="play pronunciation" class="pronunciation__button">🔊</button>
+    <p class="pronunciation__text"></p>
   </div>
 </div>
