@@ -41,7 +41,7 @@ body {
   background-image: url("/img/protogens_tile_gm.png");
   background-size: 50%;
 
-  @media (width < 992px) {
+  @media (width < 1200px) {
     width: 95%;
   }
 }
