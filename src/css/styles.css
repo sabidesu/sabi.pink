@@ -103,6 +103,11 @@ article {
     padding: 2px;
     color: var(--pink);
   }
+
+  ol,
+  ul {
+    padding-left: 1.75rem;
+  }
 }
 
 .layout {
