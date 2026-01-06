@@ -4,23 +4,21 @@ subtitle: a place for my thoughts and musings
 layout: layouts/base.njk
 ---
 
+<p>
+  <em>this blog is available as an rss feed <a href="/feed.xml">here</a></em>
+</p>
+
 {% for post in collections.blog | reverse %}
 <div class="blog-preview">
   <h3 class="blog-preview__title">
     <a href="{{ post.url }}">{{ post.data.title }}</a>
   </h3>
-  <p class="blog-preview__date">
-    {{ post.data.date | readableDate | lower }}
-  </p>
+  <p class="blog-preview__date">{{ post.data.date | readableDate | lower }}</p>
   <div class="blog-preview__tags">
     {% for tag in post.data.post_tags %}
-    <span class="blog-preview__tag">
-      {{ tag }}
-    </span>
+    <span class="blog-preview__tag">{{ tag }}</span>
     {% endfor %}
   </div>
-  <p class="blog-preview__tagline">
-    {{ post.data.tagline }}
-  </p>
+  <p class="blog-preview__tagline">{{ post.data.tagline }}</p>
 </div>
 {% endfor %}
