@@ -37,11 +37,19 @@ this also ended up sending me down a rabbit hole of trying to find an rss reader
 
 instead of neocities, i use netlify to host my website for a few reasons:
 
-1. i get to use the domains i paid for for free
-2. i can host multiple projects for free (so i can host a browser start page with links i use and the previous version of this website)
-3. ~~automatic site deployments whenever i commit to github.~~ i've learned that neocities actually has a CLI (command line interface) for being able to push your website from the command line, and there's even a git hook to do this as well
+- i get to use the domains i paid for for free
+- i can host multiple projects for free (so i can host a browser start page with links i use and the previous version of this website)
+- ~~automatic site deployments whenever i commit to github.~~ i've learned that neocities actually has a CLI (command line interface) for being able to push your website from the command line, and there's even a git hook to do this as well
 
 that said, neocities is a great website and their mission is admirable, and they absolutely deserve your support. if you have the disposable income, you can donate [here](https://neocities.org/donate)
+
+despite some initial confusion, switching domains to have v2 point to the gatsby version and the og domain point to the 11ty version wasn't difficult at all since i manage this domain via netlify. the general process went something along the lines of:
+
+1. add `v2.sabi.pink` subdomain to gatsby version of the site and set that as the primary domain of the site
+2. remove `sabi.pink` from the gatsby version of the site
+3. add the `sabi.pink` domain to the 11ty version of the site
+
+and the changes were pretty much instant, i didn't have to wait at all before going to `sabi.pink` showed me the 11ty site
 
 ### closing thoughts
 
