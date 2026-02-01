@@ -2,11 +2,11 @@
 title: remaking the site again
 tagline: rewriting this thing again again. this may be a yearly tradition lol
 date: 2026-01-11
-slug: remaking-the-site-again
 post_tags:
   - 11ty
   - programming
   - site update
+permalink: /blog/remaking-the-site-again/
 ---
 ### the seeds
 
