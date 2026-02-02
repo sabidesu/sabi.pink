@@ -7,6 +7,7 @@ post_tags:
   - programming
   - site update
 permalink: /blog/remaking-the-site-again/
+preview_image: 11ty.png
 ---
 ### the seeds
 
