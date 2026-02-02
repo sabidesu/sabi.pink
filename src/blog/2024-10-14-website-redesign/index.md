@@ -6,6 +6,7 @@ post_tags:
   - programming
 date: 2024-10-14
 permalink: /blog/website-redesign/
+preview_image: after.png
 ---
 
 so i ended up not just finally styling the blog, but actually restyling the whole website lol. before i built this site, i actually started on my own site using [neocities.org](https://neocities.org) (shoutout to the revival of the old web, fuck the modern internet), which you can view [here](https://ewavstudio.neocities.org). in fact, the beginnings of that project is actually what inspired me to make this site because i already had experience with website building beforehand with react and js, and i didn't like writing plain html and css lol. so after a bit of time searching around for frameworks, i decided on [gatsby](https://gatsbyjs.com) instead of [next.js](https://nextjs.org) because of it's focus on static sites

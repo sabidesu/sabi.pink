@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" content="{{ title }}" />
+    <meta name="og:site_name" content="sabi's stuff" />
+    <meta name="og:type" content="website" />
+    <meta name="og:image" content="{{ ["https://sabi.pink", page.url, preview_image] | join if preview_image else "https://sabi.pink/img/og_fallback.png" }}" />
+    <meta name="og:url" content="https://sabi.pink{{ page.url }}" />
+    <meta name="og:description" content="{{ tagline if tagline else subtitle }}" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
