@@ -7,6 +7,7 @@ post_tags:
   - cons
   - fc
 permalink: /blog/fc26-photos/
+preview_image: P1010055.jpg
 ---
 
 after having such a great time at my first FC last year, i had to go again this year. while the con was mediocre for me (this has nothing to do with the con, but rather my own shortcomings. i need to be more social xwx), i still had an excellent time! though it remains uncertain whether i'll return next year, i want to give ANE a shot
