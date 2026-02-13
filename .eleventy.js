@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
     },
     metadata: {
       language: "en",
-      title: "sabi's stuff",
+      title: "sabi's horde",
       subtitle: "a place for sabi's things and thoughts",
       base: "https://sabi.pink",
       author: {
