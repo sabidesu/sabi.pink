@@ -112,6 +112,12 @@ article {
     color: var(--pink);
   }
 
+  pre {
+    background-color: var(--darkest-blue);
+    overflow-x: scroll;
+    padding: 1rem;
+  }
+
   ol,
   ul {
     padding-left: 1.75rem;
@@ -133,9 +139,7 @@ article {
   }
 
   nav {
-    flex-shrink: 0;
-    flex-grow: 0;
-    flex-basis: 10rem;
+    flex: 0 0 10rem;
 
     @media (width < 992px) {
       margin-right: 0rem;
@@ -146,6 +150,7 @@ article {
 
   main {
     flex: auto; /* should fill remaining space, but never overflow */
+    min-width: 0;
 
     line-height: 1.5;
   }
