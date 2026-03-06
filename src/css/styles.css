@@ -140,6 +140,7 @@ article {
 
   nav {
     flex: 0 0 10rem;
+    height: fit-content;
 
     @media (width < 992px) {
       margin-right: 0rem;
