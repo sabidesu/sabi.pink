@@ -104,6 +104,8 @@ article {
     padding-left: 1rem;
     padding-right: 1rem;
     border-left: var(--pink) 2px solid;
+    color: var(--pink);
+    font-size: 1.1rem;
   }
 
   code {
