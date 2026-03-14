@@ -8,6 +8,7 @@ post_tags:
   - musings
   - life
 permalink: /blog/visiting-seattle-feb26/
+preview_image: fursuit_hug.jpg
 ---
 last sunday, i returned home to kansas city after visiting seattle for a week. this was my third trip there, my first one being back in august to see if it was a place i'd want to move to. i basically ended up falling in love with seattle instantly, so i scheduled another trip with the intent of checking out different neighborhoods to see where i'd potentially want to move to. that was this trip, and honestly? it was kind of a bust... if i evaluate the trip only by whether i completed that goal
 
