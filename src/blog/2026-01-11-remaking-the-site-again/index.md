@@ -5,7 +5,7 @@ date: 2026-01-11
 post_tags:
   - 11ty
   - programming
-  - site update
+  - site_update
 permalink: /blog/remaking-the-site-again/
 preview_image: 11ty.png
 ---
