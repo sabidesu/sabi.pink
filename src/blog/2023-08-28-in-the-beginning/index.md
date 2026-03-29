@@ -2,7 +2,7 @@
 title: in the beginning
 tagline: genesis; birth; inception; commencement
 post_tags:
-  - site update
+  - site_update
 date: 2023-08-28
 permalink: /blog/in-the-beginning/
 ---
