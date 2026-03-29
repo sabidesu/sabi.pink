@@ -5,7 +5,7 @@ tagline: md test
 post_tags:
   - programming
 date: 2026-01-04
-permalink: /blog/md-test/
+slug: md-test
 ---
 
 normal text

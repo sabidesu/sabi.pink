@@ -5,7 +5,7 @@ post_tags:
   - site_update
   - programming
 date: 2025-09-13
-permalink: /blog/js-to-ts/
+slug: js-to-ts
 ---
 
 more or less on a whim, i decided to convert the workings of my website from javascript (js) to typescript (ts), mostly because i've heard great things about ts and wanted to give it a shot, but also because i wanted a mediocre-size programming project to work on. this definitely isn't going to be a step-by-step guide (because gatsby has documentation on converting your site to ts, see [links that were helpful](#links-that-were-helpful)), i figured i'd just collect some resources that i found quite helpful during the process and mention things that i struggled with. i'm writing this blog post as i do it, so warning that it's probably a bit stream-of-consciousness

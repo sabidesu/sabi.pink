@@ -5,7 +5,7 @@ date: 2026-02-09
 post_tags:
   - homelab
   - tutorial
-permalink: /blog/homelab-part-1/
+slug: homelab-part-1
 preview_image: server.jpg
 ---
 

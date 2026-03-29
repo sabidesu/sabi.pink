@@ -4,7 +4,7 @@ tagline: i prefer shorter urls lol
 post_tags:
   - site_update
 date: 2023-09-18
-permalink: /blog/url-change-and-obsidian/
+slug: url-change-and-obsidian
 ---
 
 so i decided to get a new url because i didn't particularly care for `sabidesu.dev`. honestly, i'm not sure what i was thinking a year ago... but oh well! i decided why not `sabi.pink` because, y'know, my fursona *is* pink after all. it was honestly between this and `sabi.rip`, but a friend said that makes me sound like i'm dead which like, i think would've been hilarious tbh. *anyways*, new url! yippee!

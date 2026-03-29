@@ -6,7 +6,7 @@ post_tags:
   - phones
   - android
   - ios
-permalink: /blog/iphone-week-1/
+slug: iphone-week-1
 ---
 about a week ago, i switched back to an iphone after four years of using android, since i wanted a new phone (i got tired of the flipping of the galaxy z flip) and wanted to see what life is like inside the walled garden again now that i have a mac. while the transition has mostly been smooth, there are some major differences between the two that have and will take some adjusting for me, and i wanted to list them in case anyone is looking to make a similar switch. this is everything i've discovered within the first week, and i'm sure there will be more differences i encounter, but these are the major ones that stuck out to me (i tried to keep nitpicks mostly off the list)
 

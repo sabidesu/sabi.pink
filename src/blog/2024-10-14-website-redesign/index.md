@@ -5,7 +5,7 @@ post_tags:
   - site_update
   - programming
 date: 2024-10-14
-permalink: /blog/website-redesign/
+slug: website-redesign
 preview_image: after.png
 ---
 

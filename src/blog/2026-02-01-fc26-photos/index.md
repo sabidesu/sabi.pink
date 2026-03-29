@@ -6,7 +6,7 @@ post_tags:
   - photography
   - cons
   - fc
-permalink: /blog/fc26-photos/
+slug: fc26-photos
 preview_image: P1010055.jpg
 ---
 
