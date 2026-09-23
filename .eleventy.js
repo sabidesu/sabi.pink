@@ -10,6 +10,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/blog/**/*.png", {
     mode: "html-relative",
   });
+  eleventyConfig.addPassthroughCopy("./src/blog/**/*.webp", {
+    mode: "html-relative",
+  });
 
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy("./src/fonts");

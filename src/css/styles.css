@@ -39,7 +39,7 @@ body {
 
   font-family: "Space Grotesk", sans-serif;
 
-  background-image: url("/img/protogens_tile_gm.png");
+  background-image: url("/img/protogens_tile_gm.webp");
   background-size: 50%;
 
   @media (width < 1200px) {
@@ -54,7 +54,7 @@ header {
   background-size: 50%;
   background:
     linear-gradient(360deg, var(--darkest-blue) 0%, rgba(0, 0, 0, 0) 60%),
-    url("/img/header-banner.png");
+    url("/img/header-banner.webp");
   color: white;
 
   text-align: right;

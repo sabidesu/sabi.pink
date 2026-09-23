@@ -6,7 +6,7 @@ post_tags:
   - programming
 date: 2024-10-14
 slug: website-redesign
-preview_image: after.png
+preview_image: after.webp
 ---
 
 so i ended up not just finally styling the blog, but actually restyling the whole website lol. before i built this site, i actually started on my own site using [neocities.org](https://neocities.org) (shoutout to the revival of the old web, fuck the modern internet), which you can view [here](https://ewavstudio.neocities.org). in fact, the beginnings of that project is actually what inspired me to make this site because i already had experience with website building beforehand with react and js, and i didn't like writing plain html and css lol. so after a bit of time searching around for frameworks, i decided on [gatsby](https://gatsbyjs.com) instead of [next.js](https://nextjs.org) because of it's focus on static sites
@@ -19,8 +19,8 @@ but i'm realizing that i don't quite have obsidian integration set up as well as
 
 ### before
 
-![an image of sabi's website using bootstrap. the navbar is black with white text, and spans the whole top. the card in the center is black with a white border](before.png)
+![an image of sabi's website using bootstrap. the navbar is black with white text, and spans the whole top. the card in the center is black with a white border](before.webp)
 
 ### after
 
-![an image of sabi's website using tailwind css. the navbar is translucent white with a blue border with "sabi's stuff" in blue, and "about me" highlighted in pink indicating the current page. the profile card in the center is translucent white with a blue border](after.png)
+![an image of sabi's website using tailwind css. the navbar is translucent white with a blue border with "sabi's stuff" in blue, and "about me" highlighted in pink indicating the current page. the profile card in the center is translucent white with a blue border](after.webp)

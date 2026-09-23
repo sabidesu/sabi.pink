@@ -7,7 +7,7 @@ post_tags:
   - programming
   - site_update
 slug: remaking-the-site-again
-preview_image: 11ty.png
+preview_image: 11ty.webp
 ---
 ### the seeds
 
@@ -67,4 +67,4 @@ here's a few sites that i was inspired by for this iteration, you should check t
 - [randy reflects](https://www.randyreflects.com/) (note: i don't care for his use of gen ai, but besides that, i generally like the look and content of his blog. you can read about his use of ai [here](https://www.randyreflects.com/about))
 - [petrapixel](https://petrapixel.neocities.org/)
 
-![an image of the current iteration of sabi's site built with 11ty. the background is blue with pink protogens, the header is a zoomed-in and cropped photo of a novabeast with the text "sabi's stuff / inspirational/deep quote here"](11ty.png)
+![an image of the current iteration of sabi's site built with 11ty. the background is blue with pink protogens, the header is a zoomed-in and cropped photo of a novabeast with the text "sabi's stuff / inspirational/deep quote here"](11ty.webp)
