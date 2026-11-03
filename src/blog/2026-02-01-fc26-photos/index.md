@@ -16,15 +16,15 @@ i decided to take a stab at fursuit photography this convention, despite not hav
 
 i learned the hard way that while something looks in-focus on the camera, it might look slightly blurry on a larger screen.... i also learned i need to be more aware of what's in the shot, because some photos would've been much improved if i took a couple seconds to just move some objects out of the way. i think my biggest shortcoming, though, is that i rush when taking staged photos. it sounds silly, but let me explain: i feel like the subject might think "damn, it takes this long to get a photo?" when i'm trying to adjust settings on my camera, figure out good framing, etc., so i get a little sloppy and miss doing some things that would improve the shot, i.e., the lighting could be better, objects need to be moved, etc., all so the subject isn't standing there bored. i experimented with the aperature- and shutter-priority modes (to varying degrees of success, i usually use manual mode), which was very helpful, but i still missed some glaringly obvious details. for example:
 
-![a photo of a orange and white squirrel fursuiter holding a styrofoam dumbell above his head. his right leg is obscured by the styrofoam dumbell rack](P1010099.jpg)
+![an orange and white squirrel fursuiter holding a styrofoam dumbell above his head](P1010099.jpg)
 
 *why didn't i notice the huge dumbell rack covering his leg and paw??* oh well, live and learn, haha. without further ado, here's my favorite photos i took:
 
-![a photo of patrons shopping in one of the dealer's den rooms](P1010027.jpg)
-![a blurred, timelapse-esque photo of fursuiters and congoers inside the convention lobby](P1010055.jpg)
-![a photo of congoers and fursuiters outside the convention center, conversing and embracing. the sign "san jose mcenery convention center" can be seen above](P1010143.jpg)
-![a bottom-up shot of a suiter with a 3d-printed dino skull mask stomping on a building](P1010164.jpg)
-![a photo of fursuiters stomping on a micro city made of cardboard boxes. michael myers stands in the background, hands raised](P1010187.jpg)
+![patrons shopping in one of the dealer's den rooms](P1010027.jpg)
+![blurred, timelapse-esque photo of fursuiters and congoers inside the convention lobby](P1010055.jpg)
+![congoers outside the san jose mcenery convention center, conversing and embracing](P1010143.jpg)
+![bottom-up shot of a suiter with a 3d-printed dino skull mask stomping on a building](P1010164.jpg)
+![fursuiters stomping on a micro cardboard box city. michael myers stands in the background, hands raised](P1010187.jpg)
 > michael myers? at *my* further confusion macro meet?? it's more likely than you'd think
 
 if you want to see more photos i took at fc, you can find me on [furtrack](https://www.furtrack.com/user/sabi/)!

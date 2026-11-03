@@ -15,7 +15,7 @@ a few months ago, a close friend of mine had decided to undergo the process of r
 
 i realized that, despite having just converted my entire site to typescript, that i didn't want to deal with the intricacies of js/ts and gatsby for building a website, and i didn't like how i had my site set up to be able to add art pieces and projects. these were handled via contentful integrations, which were convenient, but i liked having everything i needed in one directory. returning back to html and css, combined with some of the bonuses of templating, seemed very tempting. i didn't *need* react, i just reached for it because it's what i was familiar with
 
-after reading my friend's blog post about their experience re-writing their site with 11ty (which you can read [here](https://floral.lgbt/blog/2025-10-16-11ty/)), and reading through some tutorials they linked, i decided to give it a try. below are the tutorials i found helpful:
+after reading [my friend's blog post about their experience re-writing their site with 11ty](https://floral.lgbt/blog/2025-10-16-11ty/), and reading through some tutorials they linked, i decided to give it a try. below are the tutorials i found helpful:
 
 - [flamed fury - create a static site using 11ty & deploy to neocities](https://flamedfury.com/guides/11ty-homepage-neocities/). note: this guide is out of date, but still works pretty well, in my opinion
 - [petrapixel - 11ty (eleventy) tutorial](https://petrapixel.neocities.org/coding/eleventy-tutorial)
@@ -30,7 +30,7 @@ the way 11ty deals with dates is...ngl pretty annoying to deal with. unless you 
 
 ### rss feed
 
-my gatsby site didn't have this, but i've had friends tell me that it's helpful to have since it allows people to keep up with you/your site easily, and it's apparently really easy to set up with 11ty. and by god it is. [here](https://www.11ty.dev/docs/plugins/rss/), see for yourself
+my gatsby site didn't have this, but i've had friends tell me that it's helpful to have since it allows people to keep up with you/your site easily, and it's apparently really easy to set up with 11ty. and by god it is. [read the docs for yourself](https://www.11ty.dev/docs/plugins/rss/)
 
 this also ended up sending me down a rabbit hole of trying to find an rss reader for reading other people's blogs and ngl, that's a whole 'nother article
 
@@ -42,7 +42,7 @@ instead of neocities, i use netlify to host my website for a few reasons:
 - i can host multiple projects for free (so i can host a browser start page with links i use and the previous version of this website)
 - ~~automatic site deployments whenever i commit to github.~~ i've learned that neocities actually has a CLI (command line interface) for being able to push your website from the command line, and there's even a git hook to do this as well
 
-that said, neocities is a great website and their mission is admirable, and they absolutely deserve your support. if you have the disposable income, you can donate [here](https://neocities.org/donate)
+that said, neocities is a great website and their mission is admirable, and they absolutely deserve your support. if you have the disposable income, you can [donate to neocities](https://neocities.org/donate)
 
 despite some initial confusion, switching domains to have v2 point to the gatsby version and the og domain point to the 11ty version wasn't difficult at all since i manage this domain via netlify. the general process went something along the lines of:
 
@@ -60,11 +60,11 @@ there's also still some features that i need to get working (i.e. site embeds do
 
 ### inspiration
 
-here's a few sites that i was inspired by for this iteration, you should check them out! maybe i'll add a page for blogs and sites that inspire me in the future.... and if you find yourself inspired by my site, you can find the source code [here](https://github.com/sabidesu/sabi.pink)
+here's a few sites that i was inspired by for this iteration, you should check them out! maybe i'll add a page for blogs and sites that inspire me in the future.... and if you find yourself inspired by my site, [this is the source code](https://github.com/sabidesu/sabi.pink)
 
 - [razz!](https://floraltrash.neocities.org)
 - [cavern of remembrance](https://cavernofremembrance.neocities.org)
-- [randy reflects](https://www.randyreflects.com/) (note: i don't care for his use of gen ai, but besides that, i generally like the look and content of his blog. you can read about his use of ai [here](https://www.randyreflects.com/about))
+- [randy reflects](https://www.randyreflects.com/) (note: i don't care for his use of gen ai, but besides that, i generally like the look and content of his blog. you can [read about his use of ai](https://www.randyreflects.com/about)
 - [petrapixel](https://petrapixel.neocities.org/)
 
-![an image of the current iteration of sabi's site built with 11ty. the background is blue with pink protogens, the header is a zoomed-in and cropped photo of a novabeast with the text "sabi's stuff / inspirational/deep quote here"](11ty.webp)
+![screenshot of the current iteration of sabi's site](11ty.webp)

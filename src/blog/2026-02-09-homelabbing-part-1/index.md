@@ -9,10 +9,10 @@ slug: homelab-part-1
 preview_image: server.jpg
 ---
 
-> *note:* this post is **very** information-dense. i try to lay things out in a way that hopefully makes sense, and while this post is partially meant to inform *and* entertain, i tried to make the most helpful tips stand out. 
-> 
+> *note:* this post is **very** information-dense. i try to lay things out in a way that hopefully makes sense, and while this post is partially meant to inform *and* entertain, i tried to make the most helpful tips stand out.
+>
 > also, this post was written over the course of months since i'm continuing to experiment with my homelab to this day ~~and i also kept forgetting to write this~~, so details for things i set up a few months ago are likely quite hazy, sorry x3
-> 
+>
 > also, i use "homelab" and "server" interchangeably here, but if those are actually totally different things, *please let me know i'm so sorry*
 
 to be honest, the beginning of this story isn't that interesting, so i'll spare you the details: i'd already been thinking about making a server for awhile, mainly so i could host my own music streaming service, but i'd held off for awhile because i didn't really have the space for it, and my parents whom i live with don't love the idea of a constantly-running computer. but, after overhearing a conversation at a friend's housewarming party, i decided that i didn't want to wait to move out like i originally planned to get started on a homelab, and started looking on facebook marketplace for a pc the next day
@@ -25,7 +25,7 @@ it turns out, despite being released about 7 or 8 years ago, it does not come wi
 
 ### ubuntu server and netplan woes
 
-before i want to talk about networking woes, i think it makes more sense to talk about the os i chose for my server, first. i admittedly spent more time deliberating over what operating system i wanted my server to run than what the hardware should look like lmao. i considered trying out [proxmox](https://www.proxmox.com/en/), but just looking at their website made me unsure of how to even get started with them, so i nixed them from the list. speaking of nixing, i also thought about [nixos](https://nixos.org/), the trendy new distro that everyone's been using on r/unixporn, which i love to browse while fantasizing about replacing windows 11 on my desktop. musician and youtuber diinki actually has a super cool video about it [here](https://youtu.be/GkMEYlUHvTE), which i highly recommend you check out (i also super love like *everything* about their aesthetic)
+before i want to talk about networking woes, i think it makes more sense to talk about the os i chose for my server, first. i admittedly spent more time deliberating over what operating system i wanted my server to run than what the hardware should look like lmao. i considered trying out [proxmox](https://www.proxmox.com/en/), but just looking at their website made me unsure of how to even get started with them, so i nixed them from the list. speaking of nixing, i also thought about [nixos](https://nixos.org/), the trendy new distro that everyone's been using on r/unixporn, which i love to browse while fantasizing about replacing windows 11 on my desktop. musician and youtuber diinki actually has a [super cool video about it](https://youtu.be/GkMEYlUHvTE), which i highly recommend you check out (i also super love like *everything* about their aesthetic)
 
 the main draw of nixos for me was the fact that everything is reproducible and declarative. simply put: you can take your config from one system, put it on another system, and have the exact same software setup. i like the idea of having everything controlled by what could be a single git repo, and just committing changes that work and rolling back what doesn't (nixos takes a snapshot of every config, so you can easily roll it back if you make a breaking change). but to get nixos set up, you have to learn the nix programming language, which is a functional language, and i know nothing about those. while entirely possible for me to sit down and take time to learn it, it would take a lot of spoons that i often lack after work, plus i already struggle cycling my time between other hobbies, and i wanted something that i'd be able to set up fairly quickly. so nix was also nixed, and i ended up going with ubuntu server just for it's familiarity
 
@@ -77,9 +77,9 @@ now that i had a way to access my server remotely, i needed an *easy* way to acc
 
 ### intermission - look at my server pls
 
-okay, i've thrown a lot of info at you. let's take a small break. 
+okay, i've thrown a lot of info at you. let's take a small break.
 
-![a powered-on black thinkcentre pc sits sideways on top of a black raiser on a desk sandwiched beneath and between two monitors](server.jpg)
+![a black thinkcentre pc sits atop a black raiser on a desk](server.jpg)
 
 here's a picture of my server as it currently sits on my desk. even though i love to cover my things in stickers, there's a lack of them here because i wanted to cover it in media-related stickers, which i have a lack of. guess i need to go hunting for them at furcons and the local upcoming anime convention. so for now, there's a TV (way in the back-left corner), ouran high school host club, and full body 2. there'll be more in a later update, prolly
 
@@ -105,7 +105,7 @@ following the tutorials didn't take long, but i encountered a number of issues w
 (porkbun) {
   tls {
     dns porkbun {
-      api_key nuh_uh 
+      api_key nuh_uh
       api_secret_key no_way
     }
     resolvers 1.1.1.1 8.8.8.8 # cloudflare w/ google backup

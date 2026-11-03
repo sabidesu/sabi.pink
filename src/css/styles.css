@@ -39,8 +39,7 @@ body {
 
   font-family: "Space Grotesk", sans-serif;
 
-  background-image: url("/img/protogens_tile_gm.webp");
-  background-size: 50%;
+  background-image: url("/img/protogens_tile_gm_small.webp");
 
   @media (width < 1200px) {
     width: 95%;
