@@ -1,5 +1,29 @@
-.home__social-link {
-  white-space: nowrap;
+.home-social-links {
+  margin-top: 1rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+
+  .home-social-links__link {
+    transition:
+      color 0.2s,
+      background 0.2s,
+      border 0.2s;
+
+    color: white;
+    background-color: #A44052; /* bottom right border color when using outset var(--dark-pink) */
+    text-decoration: none;
+
+    border: 2px outset var(--dark-pink);
+    padding: 0.5rem;
+  }
+
+  .home-social-links__link:hover {
+    color: black;
+    background-color: var(--pink);
+    border-color: var(--pink);
+  }
 }
 
 .home__pfp {

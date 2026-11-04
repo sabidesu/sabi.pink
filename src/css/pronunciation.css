@@ -4,34 +4,48 @@
   word-break: break-all;
 }
 
-.pronunciation--top {
+.new-p {
   margin-bottom: 1rem;
 
-  .pronunciation__text {
+  .p__text {
     margin-top: 1rem;
   }
 }
 
-.pronunciation__button {
-  border: 1px solid var(--pink);
-  color: white;
-  background: none;
+.new-p__button, .past-p__button {
+  cursor: pointer;
   transition:
-    background 0.2s,
-    color 0.2s;
+    color 0.2s,
+    border 0.2s,
+    background 0.2s;
 
-  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  background-color: #A44052; /* bottom right border color when using outset var(--dark-pink) */
+  text-decoration: none;
 
-  padding: 0.25rem;
-  margin-right: 0.5rem;
+  border: 2px outset var(--dark-pink);
+  padding: 0.5rem;
+
+  &:hover {
+    color: black;
+    background-color: var(--pink);
+    border-color: var(--pink);
+  }
 }
 
-.pronunciation__button:hover {
-  background: var(--pink);
-  color: black;
+.past-p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .past-p__pronunciation {
+    align-items: center;
+    gap: 0.5rem;
+  }
 }
 
-.pronunciation__text {
+.p__text {
   margin: 0;
   overflow-wrap: break-word;
+  word-break: break-all;
 }
