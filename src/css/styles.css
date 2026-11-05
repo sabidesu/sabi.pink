@@ -13,6 +13,10 @@
   --title-font: "FOT-NewRodin Pro", sans-serif;
   --pink: #ffa6c7;
   --dark-pink: #f6607b;
+
+  --background-blue: #065085;
+
+  scrollbar-color: var(--darkest-blue) var(--background-blue);
 }
 
 .mobile-hide {
@@ -40,6 +44,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
 
   background-image: url("/img/protogens_tile_gm_small.webp");
+
 
   @media (width < 1200px) {
     width: 95%;
